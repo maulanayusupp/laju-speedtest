@@ -35,6 +35,8 @@ export function usePageSeo(
     ogDescription: description,
     ogType: type as 'website',
     ogImage,
+    // Some older WhatsApp builds look for secure_url before og:image.
+    ogImageSecureUrl: ogImage,
     ogImageWidth: 1200,
     ogImageHeight: 630,
     ogImageType: imageType,

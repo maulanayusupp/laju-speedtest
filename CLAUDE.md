@@ -204,9 +204,25 @@ the compliance page prints the live endpoint list from runtime config.
 
 ## Deployment notes
 
+- **Region is a measurement parameter, not an ops detail.** The endpoints *are*
+  the test server, so distance to the visitor becomes the result. Vercel defaults
+  to `iad1` (Washington DC): measured from Bandung that is ~300 ms RTT and a
+  single stream barely reaches 51 Mbps on a 324 Mbps line. `vercel.json` pins the
+  functions to **`sin1` (Singapore)**. Verify after any deploy with
+  `curl -sD - -o /dev/null <site>/api/speed/ping | grep x-laju-region`.
+- Live at **https://laju-speedtest.vercel.app** (also the `NUXT_PUBLIC_SITE_URL`
+  default). Keep the canonical/OG host on **https** — Vercel answers plain http
+  with a 308, and an http `og:image` costs crawlers an extra redirect hop.
 - The download route streams up to hundreds of MB per request. On a serverless
   host this counts toward execution time and egress; a dedicated measurement
   origin is the right move if traffic grows (tracked in TODO.md).
+- **Link previews verified live** (WhatsApp / Instagram / Facebook / X): OG and
+  Twitter tags are server-rendered, so no JS-executing crawler is required;
+  `og:image` is an absolute https **PNG** (1200×630, ~195 KB — under WhatsApp's
+  ~300 KB practical ceiling) with `og:image:secure_url`, `type`, `width`,
+  `height` and `alt`; `og:url`, `og:site_name` and `og:locale` come from
+  `@nuxtjs/seo`. Re-check with
+  `curl -sA facebookexternalhit/1.1 <site> | grep 'og:image'`.
 - `serverRegion()` reads `VERCEL_REGION` / `FLY_REGION` / `AWS_REGION` and is
   surfaced in the UI as the test-server region; it is `null` locally, which the
   UI renders as "local server" rather than inventing a location.
