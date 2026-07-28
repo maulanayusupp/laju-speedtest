@@ -48,10 +48,10 @@ export const aboutValues = [
 ] as const
 
 /**
- * Contact channels (`contact.channels.<id>.{label,hint}`). Written channels
- * only — no voice line is published, so nothing here needs a phone number.
+ * Contact channels (`contact.channels.<id>.{label,hint}`). Email only, by
+ * design: no phone number is published anywhere on the site, and that includes
+ * messaging apps keyed to one. Adding a channel here must not reintroduce one.
  */
 export const contactChannels = [
   { id: 'email', icon: 'mail' },
-  { id: 'whatsapp', icon: 'message' },
 ] as const

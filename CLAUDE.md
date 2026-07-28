@@ -69,8 +69,8 @@ app/
                           #   ResultActions
     network/              # ConnectionPanel (IPv4 / IPv6 + connection facts)
     history/              # HistoryChart, HistoryTable
-    contact/              # ContactForm, ContactChannels (email + WhatsApp only:
-                          #   no phone number is published anywhere)
+    contact/              # ContactForm, ContactChannels (EMAIL ONLY — see §Rules:
+                          #   no phone number is published anywhere on the site)
   composables/            # useSpeedTest, useNetworkIdentity, useTestHistory,
                           #   usePageSeo, useFormat, useContact, useClipboard,
                           #   useReveal
@@ -87,7 +87,7 @@ server/
   api/speed/{ping,download,upload}   # measurement endpoints
   api/network/ip                     # address our origin observes
   utils/measurement.ts               # no-store headers, region, clamping
-i18n/locales/{en,id}.json            # ALL user-facing text (366 keys each)
+i18n/locales/{en,id}.json            # ALL user-facing text (363 keys each)
 public/                              # generated favicons, manifest, og-image
 scripts/                             # generate-favicons, generate-og, check-i18n
 assets/favicon-source.svg            # favicon source of truth
@@ -182,7 +182,7 @@ the compliance page prints the live endpoint list from runtime config.
 - Locales in `i18n/locales/{en,id}.json`; **ID is the default** (no prefix),
   EN lives under `/en/*` (`strategy: 'prefix_except_default'`).
 - Keys mirror page/section structure. **Keep EN and ID in lockstep** — same keys
-  and same interpolation placeholders (**366 keys each**). `pnpm i18n:check`
+  and same interpolation placeholders (**363 keys each**). `pnpm i18n:check`
   verifies both and exits non-zero on drift.
 - Interpolations in use: `{date}`, `{value}`, `{unit}`, `{down}`, `{up}`,
   `{name}`, `{reply}`, `{topic}`, `{message}`. A literal `@` must be escaped as
@@ -245,7 +245,12 @@ the compliance page prints the live endpoint list from runtime config.
 7. **Privacy by default.** No analytics, no result upload, no IP logging in
    application code. New third-party calls must be added to the compliance
    matrix and the privacy page first.
-8. **Commits.** Author = **Maulana Yusup Abdullah <maulanayusupp@gmail.com>**.
+8. **No phone number, anywhere.** Email is the only published contact channel.
+   Do not add a `tel:` link, a WhatsApp/`wa.me` link, or any messaging channel
+   keyed to a phone number — not in the UI, not in i18n, not in runtimeConfig,
+   not in `.env.example`. (The WhatsApp mentions that remain in this file are
+   about link-preview *crawlers*, not a contact channel.)
+9. **Commits.** Author = **Maulana Yusup Abdullah <maulanayusupp@gmail.com>**.
    **No AI/Claude co-author trailer.** Commit **and push** after each change.
 
 ## Backlog

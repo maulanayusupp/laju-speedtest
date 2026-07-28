@@ -390,17 +390,12 @@
     "channels": {
       "email": {
         "label": "Email",
-        "hint": "Cara paling andal untuk pertanyaan panjang."
-      },
-      "whatsapp": {
-        "label": "WhatsApp",
-        "hint": "Untuk pertanyaan singkat pada jam kerja."
+        "hint": "Satu-satunya jalur kontak yang kami buka."
       }
     },
     "template": {
       "subject": "Laju — pertanyaan",
-      "body": "Halo Laju,\n\nSaya ingin menanyakan tentang hasil tes kecepatan.\n\n",
-      "whatsapp": "Halo Laju, saya ingin menanyakan tentang hasil tes kecepatan."
+      "body": "Halo Laju,\n\nSaya ingin menanyakan tentang hasil tes kecepatan.\n\n"
     },
     "responseNote": "Proyek ini dipelihara di luar jam kerja utama, jadi balasan biasanya memakan waktu beberapa hari kerja."
   },

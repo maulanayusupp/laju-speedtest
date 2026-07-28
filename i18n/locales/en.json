@@ -390,17 +390,12 @@
     "channels": {
       "email": {
         "label": "Email",
-        "hint": "The most reliable route for longer questions."
-      },
-      "whatsapp": {
-        "label": "WhatsApp",
-        "hint": "For short questions during working hours."
+        "hint": "The only contact channel we keep open."
       }
     },
     "template": {
       "subject": "Laju — question",
-      "body": "Hello Laju,\n\nI have a question about a speed test result.\n\n",
-      "whatsapp": "Hello Laju, I have a question about a speed test result."
+      "body": "Hello Laju,\n\nI have a question about a speed test result.\n\n"
     },
     "responseNote": "This project is maintained outside of main working hours, so replies usually take a few business days."
   },
