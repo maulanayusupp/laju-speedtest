@@ -47,9 +47,11 @@ export const aboutValues = [
   { id: 'accessibility', icon: 'users' },
 ] as const
 
-/** Contact channels (`contact.channels.<id>.{label,hint}`). */
+/**
+ * Contact channels (`contact.channels.<id>.{label,hint}`). Written channels
+ * only — no voice line is published, so nothing here needs a phone number.
+ */
 export const contactChannels = [
   { id: 'email', icon: 'mail' },
   { id: 'whatsapp', icon: 'message' },
-  { id: 'phone', icon: 'phone' },
 ] as const

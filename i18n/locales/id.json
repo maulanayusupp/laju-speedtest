@@ -322,7 +322,7 @@
     "facts": {
       "title": "Fakta singkat",
       "maintainer": "Pemelihara",
-      "maintainerValue": "Maulana Yusup Abdullah",
+      "maintainerValue": "Maulana Yusup A",
       "based": "Lokasi",
       "since": "Sejak",
       "independence": "Afiliasi",
@@ -395,10 +395,6 @@
       "whatsapp": {
         "label": "WhatsApp",
         "hint": "Untuk pertanyaan singkat pada jam kerja."
-      },
-      "phone": {
-        "label": "Telepon",
-        "hint": "Hanya untuk hal mendesak."
       }
     },
     "template": {

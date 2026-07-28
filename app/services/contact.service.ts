@@ -5,7 +5,6 @@
 
 export interface ContactChannelConfig {
   email: string
-  phone: string
   whatsapp: string
 }
 
@@ -21,8 +20,4 @@ export function mailtoLink(email: string, subject: string, body: string): string
 
 export function whatsappLink(number: string, message: string): string {
   return `https://wa.me/${normalizeWhatsApp(number)}?text=${encodeURIComponent(message)}`
-}
-
-export function telLink(phone: string): string {
-  return `tel:${phone.replace(/[^\d+]/g, '')}`
 }

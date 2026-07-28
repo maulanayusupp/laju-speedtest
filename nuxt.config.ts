@@ -87,7 +87,6 @@ export default defineNuxtConfig({
     public: {
       siteUrl,
       contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'maulanayusupp@gmail.com',
-      contactPhone: process.env.NUXT_PUBLIC_CONTACT_PHONE || '+62 878-2276-6333',
       whatsapp: process.env.NUXT_PUBLIC_WHATSAPP || '6287822766333',
       // Third-party IPv4/IPv6-only echo endpoints used by the browser to reveal
       // BOTH address families (a single origin can only ever see one of them).

@@ -322,7 +322,7 @@
     "facts": {
       "title": "Quick facts",
       "maintainer": "Maintainer",
-      "maintainerValue": "Maulana Yusup Abdullah",
+      "maintainerValue": "Maulana Yusup A",
       "based": "Based in",
       "since": "Since",
       "independence": "Affiliation",
@@ -395,10 +395,6 @@
       "whatsapp": {
         "label": "WhatsApp",
         "hint": "For short questions during working hours."
-      },
-      "phone": {
-        "label": "Phone",
-        "hint": "For urgent matters only."
       }
     },
     "template": {
