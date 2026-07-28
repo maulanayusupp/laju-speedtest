@@ -1,5 +1,4 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "//": "Region matters more here than in a normal app: the measurement endpoints ARE the test server, so distance to the visitor becomes the result. Vercel defaults to iad1 (Washington DC), which from Indonesia means ~300 ms RTT and a badly under-reported throughput figure. sin1 (Singapore) is the closest region to the primary audience. The Hobby plan allows exactly one region — change this if the audience moves.",
   "regions": ["sin1"]
 }
