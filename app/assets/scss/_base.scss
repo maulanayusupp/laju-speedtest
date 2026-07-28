@@ -1,0 +1,79 @@
+// =============================================================================
+// Global page chrome: background field, selection, scrollbar, skip link.
+// =============================================================================
+@use 'variables' as *;
+@use 'mixins' as *;
+
+body {
+  background-color: var(--c-void);
+  color: var(--c-text-soft);
+}
+
+// The aurora field sits behind everything and never scrolls with content, so
+// the whole site feels like one continuous instrument surface.
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: z('below');
+  background: var(--grad-aurora);
+  pointer-events: none;
+}
+
+// A faint engineering grid over the aurora — the "measurement paper" motif.
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: z('below');
+  background-image:
+    linear-gradient(rgb(140 165 255 / 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(140 165 255 / 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 25%, transparent 78%);
+  pointer-events: none;
+}
+
+::selection {
+  background: rgb(34 225 255 / 0.28);
+  color: var(--c-text);
+}
+
+* {
+  scrollbar-color: var(--c-line-strong) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-line-strong);
+  border: 3px solid transparent;
+  border-radius: var(--radius-pill);
+  background-clip: content-box;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: z('modal');
+  padding: 0.65rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: var(--c-cyan);
+  color: var(--c-text-inverse);
+  font-weight: 600;
+  transform: translateY(-160%);
+  transition: transform var(--dur) var(--ease-out);
+
+  &:focus-visible {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,7 @@
+// =============================================================================
+// Shared, side-effect-free SCSS injected into EVERY component <style> block via
+// nuxt.config → vite.css.preprocessorOptions.scss.additionalData.
+// Only forwards variables, functions, and mixins — emits NO CSS.
+// =============================================================================
+@forward 'variables';
+@forward 'mixins';

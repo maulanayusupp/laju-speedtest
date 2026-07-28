@@ -1,0 +1,10 @@
+// =============================================================================
+// Single global SCSS entrypoint (referenced by nuxt.config `css`).
+// Order matters: tokens → reset → typography → base → utilities.
+// Component-scoped styles inherit variables/mixins via _shared.scss injection.
+// =============================================================================
+@use 'tokens';
+@use 'reset';
+@use 'typography';
+@use 'base';
+@use 'utilities';

@@ -1,0 +1,54 @@
+// =============================================================================
+// A deliberately small utility layer. Anything reused three times or more
+// becomes a component or a mixin instead of growing this file.
+// =============================================================================
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.container {
+  @include container;
+}
+
+.container--narrow {
+  @include container($container-narrow);
+}
+
+.container--wide {
+  @include container($container-wide);
+}
+
+.section {
+  @include section-padding;
+}
+
+.sr-only {
+  @include visually-hidden;
+}
+
+.mono {
+  font-family: $font-mono;
+}
+
+.spectrum-text {
+  @include spectrum-text;
+}
+
+// Scroll-reveal contract used by the `useReveal` composable: elements start
+// dimmed and shifted, then gain `.is-revealed` when they enter the viewport.
+.reveal {
+  opacity: 1;
+  transform: none;
+
+  @include motion-safe {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity var(--dur-slow) var(--ease-out),
+      transform var(--dur-slow) var(--ease-out);
+
+    &.is-revealed {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

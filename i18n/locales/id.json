@@ -1,0 +1,633 @@
+{
+  "meta": {
+    "tagline": "Tes kecepatan internet yang transparan"
+  },
+  "a11y": {
+    "skip": "Lewati ke konten utama",
+    "language": "Pilih bahasa",
+    "primaryNav": "Navigasi utama",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "sections": "Daftar bagian"
+  },
+  "common": {
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "loading": "Memuat…",
+    "onThisPage": "Di halaman ini",
+    "lastUpdated": "Terakhir diperbarui {date}"
+  },
+  "units": {
+    "mbps": "Mbps",
+    "ms": "ms",
+    "seconds": "detik"
+  },
+  "nav": {
+    "test": "Tes Kecepatan",
+    "howItWorks": "Cara Kerja",
+    "history": "Riwayat",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "compliance": "Kepatuhan",
+    "privacy": "Privasi",
+    "terms": "Ketentuan"
+  },
+  "footer": {
+    "blurb": "Laju mengukur kecepatan unduh, unggah, latensi, dan jitter langsung dari peramban Anda, lalu menampilkan alamat IPv4 dan IPv6 Anda apa adanya.",
+    "disclaimer": "Laju adalah alat pengukuran independen. Kami bukan penyedia layanan internet dan tidak berafiliasi dengan operator mana pun. Hasil tes menggambarkan kondisi jalur antara peramban Anda dan server kami pada saat pengujian.",
+    "localData": "Riwayat tes disimpan di peramban Anda sendiri.",
+    "groups": {
+      "product": "Produk",
+      "company": "Proyek",
+      "legal": "Legal"
+    }
+  },
+  "grades": {
+    "excellent": "Sangat baik",
+    "good": "Baik",
+    "fair": "Cukup",
+    "poor": "Kurang"
+  },
+  "metrics": {
+    "download": "Unduh",
+    "upload": "Unggah",
+    "latency": "Latensi",
+    "jitter": "Jitter",
+    "loadedLatency": "Latensi saat sibuk",
+    "transferHint": "sekitar {value} MB per detik",
+    "latencyHint": "rata-rata {value} ms",
+    "lossHint": "{value}% permintaan tidak sampai"
+  },
+  "stage": {
+    "start": "Mulai tes",
+    "stop": "Hentikan",
+    "again": "Tes lagi",
+    "viewHistory": "Lihat riwayat",
+    "error": "Tes tidak dapat diselesaikan. Periksa koneksi Anda lalu coba lagi.",
+    "progressLabel": "Kemajuan pengujian",
+    "noTrace": "Grafik akan muncul setelah pengukuran dimulai.",
+    "peak": "puncak",
+    "phases": {
+      "idle": "Siap diuji",
+      "latency": "Mengukur latensi",
+      "download": "Mengukur unduhan",
+      "upload": "Mengukur unggahan",
+      "done": "Selesai",
+      "error": "Gagal"
+    },
+    "steps": {
+      "latency": "Latensi",
+      "download": "Unduh",
+      "upload": "Unggah"
+    }
+  },
+  "connection": {
+    "title": "Koneksi Anda",
+    "lead": "Alamat IPv4 dan IPv6 diperiksa lewat dua nama host terpisah, karena satu server hanya bisa melihat satu jenis alamat.",
+    "ipv4": "Alamat IPv4",
+    "ipv6": "Alamat IPv6",
+    "notDetected": "Tidak terdeteksi",
+    "noIpv6": "Jaringan Anda tampaknya belum memiliki konektivitas IPv6.",
+    "probeDisabled": "Pemeriksaan pihak ketiga dinonaktifkan pada penerapan ini.",
+    "refresh": "Periksa ulang koneksi",
+    "unknown": "Tidak tersedia",
+    "localOrigin": "Server lokal",
+    "disclosure": "Pemeriksaan alamat memakai dua layanan pihak ketiga yang hanya mengembalikan alamat IP Anda. Rinciannya ada di",
+    "disclosureLink": "kebijakan privasi.",
+    "facts": {
+      "location": "Perkiraan lokasi",
+      "protocol": "Protokol",
+      "serverRegion": "Region server uji"
+    }
+  },
+  "capabilities": {
+    "title": "Perkiraan yang nyaman dilakukan",
+    "items": {
+      "browsing": "Menjelajah web dan media sosial",
+      "videoCall": "Panggilan video HD",
+      "hdVideo": "Streaming video HD",
+      "uhdVideo": "Streaming video 4K",
+      "cloudGaming": "Cloud gaming 1080p",
+      "largeFiles": "Berbagi berkas besar dan kerja jarak jauh"
+    },
+    "requirementDown": "perlu sekitar {down} Mbps unduh",
+    "requirementBoth": "perlu sekitar {down} Mbps unduh dan {up} Mbps unggah",
+    "supported": "Terpenuhi",
+    "notSupported": "Belum terpenuhi",
+    "disclaimer": "Angka ambang di atas adalah perkiraan umum untuk satu aktivitas pada jaringan yang sedang tidak sibuk. Kebutuhan sebenarnya berbeda tiap layanan, dan latensi, jitter, kualitas Wi-Fi, serta jumlah perangkat ikut menentukan."
+  },
+  "details": {
+    "title": "Rincian pengukuran",
+    "bufferbloat": "Responsif saat sibuk",
+    "bufferbloatBody": "Saat jalur dipenuhi unduhan, latensi naik sekitar {value} ms dibanding kondisi senggang. Kenaikan besar biasanya terasa sebagai lag pada panggilan video atau permainan meski angka kecepatannya tinggi.",
+    "rows": {
+      "loadedLatency": "Latensi saat sibuk",
+      "idleLatency": "Rentang latensi senggang",
+      "loss": "Permintaan gagal",
+      "streams": "Koneksi paralel (unduh / unggah)",
+      "data": "Data terpakai",
+      "server": "Region server uji"
+    }
+  },
+  "share": {
+    "title": "Hasil tes kecepatan Laju",
+    "measuredAt": "Diukur pada",
+    "source": "Diukur dengan Laju, alat tes kecepatan berbasis peramban.",
+    "copy": "Salin hasil",
+    "copied": "Hasil tersalin"
+  },
+  "home": {
+    "meta": {
+      "title": "Tes kecepatan internet dengan IPv4 dan IPv6",
+      "description": "Ukur kecepatan unduh, unggah, latensi, dan jitter langsung dari peramban Anda. Laju juga menampilkan alamat IPv4 dan IPv6 Anda serta menjelaskan cara angkanya diperoleh."
+    },
+    "hero": {
+      "title": "Ukur koneksi Anda, lalu pahami angkanya",
+      "lead": "Satu ketukan untuk mengukur unduh, unggah, latensi, dan jitter — lengkap dengan alamat IPv4 dan IPv6 Anda, serta penjelasan terbuka tentang cara setiap angka dihitung."
+    },
+    "why": {
+      "eyebrow": "Kenapa Laju",
+      "title": "Angka saja tidak cukup",
+      "lead": "Kecepatan tinggi tidak selalu berarti koneksi terasa cepat. Laju menampilkan hal-hal yang biasanya disembunyikan agar Anda bisa menilai sendiri."
+    },
+    "features": {
+      "dualStack": {
+        "title": "IPv4 dan IPv6 sekaligus",
+        "body": "Sebagian besar alat hanya menampilkan satu alamat. Laju memeriksa keduanya lewat nama host terpisah, jadi Anda tahu apakah jaringan Anda sudah siap IPv6."
+      },
+      "loadedLatency": {
+        "title": "Latensi saat jalur sibuk",
+        "body": "Kami mengukur latensi lagi ketika unduhan sedang berjalan. Selisihnya menjelaskan kenapa panggilan video bisa tersendat di koneksi yang katanya cepat."
+      },
+      "noAccount": {
+        "title": "Tanpa akun, tanpa iklan",
+        "body": "Tidak ada pendaftaran, tidak ada pelacak iklan, dan riwayat tes hanya tersimpan di peramban Anda sendiri."
+      },
+      "openMethod": {
+        "title": "Metode yang bisa diperiksa",
+        "body": "Durasi, jumlah koneksi paralel, dan periode pemanasan kami tulis apa adanya di halaman Cara Kerja — bukan sebagai rahasia."
+      }
+    },
+    "method": {
+      "eyebrow": "Metode",
+      "title": "Kami tulis apa yang benar-benar diukur",
+      "lead": "Setiap tes menarik data acak dari server kami sendiri, menghitung byte yang benar-benar sampai, dan membuang periode pemanasan sebelum menghitung rata-rata.",
+      "cta": "Baca metodenya",
+      "note": "Hasil Laju menggambarkan jalur antara peramban Anda dan satu server uji pada saat itu. Angka ini bukan pengukuran resmi untuk klaim ke penyedia layanan Anda, dan bisa berbeda dari alat lain yang memakai server, durasi, atau jumlah koneksi berbeda."
+    }
+  },
+  "cta": {
+    "title": "Siap melihat kondisi koneksi Anda?",
+    "lead": "Tesnya berlangsung sekitar setengah menit dan tidak meminta data pribadi apa pun.",
+    "primary": "Jalankan tes",
+    "secondary": "Pelajari metodenya"
+  },
+  "howItWorks": {
+    "meta": {
+      "title": "Cara kerja tes kecepatan Laju",
+      "description": "Penjelasan lengkap tentang urutan pengukuran, parameter yang dipakai, dan keterbatasan hasil tes kecepatan berbasis peramban."
+    },
+    "hero": {
+      "eyebrow": "Metodologi",
+      "title": "Cara Laju mengukur koneksi Anda",
+      "lead": "Empat langkah, parameter terbuka, dan daftar jujur tentang hal-hal yang tidak bisa disimpulkan dari hasilnya."
+    },
+    "steps": {
+      "latency": {
+        "title": "1. Latensi dan jitter",
+        "body": "Peramban mengirim serangkaian permintaan sangat kecil yang tidak boleh di-cache. Waktu pulang-pergi tercepat dipakai sebagai latensi, sedangkan jitter dihitung dari rata-rata selisih antar permintaan berurutan. Ini pengukuran HTTP, bukan ICMP, jadi angkanya sedikit lebih tinggi daripada perintah ping."
+      },
+      "download": {
+        "title": "2. Unduh",
+        "body": "Beberapa koneksi paralel menarik data acak dari server kami dan byte dihitung saat tiba. Data acak dipilih karena tidak bisa dimampatkan di tengah jalan, sehingga angkanya tidak terbantu kompresi."
+      },
+      "loaded": {
+        "title": "3. Latensi saat sibuk",
+        "body": "Selama unduhan berlangsung, pengukuran latensi diulang. Kenaikan yang besar menandakan antrean buffer di sepanjang jalur — penyebab umum lag meski kecepatan terlihat tinggi."
+      },
+      "upload": {
+        "title": "4. Unggah",
+        "body": "Data acak dikirim kembali ke server dan dibuang begitu tiba. Kemajuan unggahan dilaporkan peramban sedikit lebih cepat daripada kondisi kabel sebenarnya, karena itu periode pemanasan unggah kami buat lebih panjang."
+      }
+    },
+    "parameters": {
+      "eyebrow": "Parameter",
+      "title": "Angka yang dipakai mesin uji",
+      "lead": "Nilai berikut dibaca langsung dari konfigurasi mesin uji, jadi halaman ini selalu sama dengan yang benar-benar dijalankan.",
+      "rows": {
+        "latencySamples": "Jumlah pengukuran latensi",
+        "downloadDuration": "Durasi fase unduh",
+        "uploadDuration": "Durasi fase unggah",
+        "downloadStreams": "Koneksi paralel saat unduh",
+        "uploadStreams": "Koneksi paralel saat unggah",
+        "warmup": "Pemanasan diabaikan (unduh / unggah)"
+      }
+    },
+    "limits": {
+      "eyebrow": "Keterbatasan",
+      "title": "Yang tidak bisa disimpulkan dari hasil ini",
+      "lead": "Kami memilih menyebutkan batasannya daripada membiarkan angka bicara lebih dari kemampuannya.",
+      "items": {
+        "singleServer": "Pengujian hanya melawan satu server uji, bukan jaringan server global. Jalur ke layanan lain bisa berbeda.",
+        "browserOverhead": "Pengukuran berjalan di dalam peramban melalui HTTPS, sehingga ada biaya enkripsi dan pemrosesan yang tidak dialami alat tingkat sistem.",
+        "wifi": "Wi-Fi, kabel yang usang, atau perangkat router lama sering menjadi titik paling lambat, bukan langganan internetnya.",
+        "vpn": "VPN, proxy, atau pemblokir iklan tingkat jaringan akan mengubah hasil karena lalu lintas melewati jalur tambahan.",
+        "sharedLine": "Perangkat lain yang sedang memakai jaringan yang sama akan menurunkan hasil pengukuran.",
+        "uploadReporting": "Kemajuan unggahan dilaporkan oleh peramban dari buffer soket, sehingga detik-detik awal cenderung terlihat lebih cepat dari keadaan sebenarnya."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "Pertanyaan umum",
+    "title": "Hal yang sering ditanyakan",
+    "items": {
+      "whyDifferent": {
+        "q": "Kenapa hasilnya berbeda dengan alat tes lain?",
+        "a": "Setiap alat memakai server, durasi, jumlah koneksi paralel, dan cara menghitung rata-rata yang berbeda. Perbedaan puluhan persen antar alat adalah hal biasa. Yang lebih berguna adalah membandingkan hasil dari alat yang sama di waktu yang berbeda."
+      },
+      "ipv6Missing": {
+        "q": "Kenapa alamat IPv6 saya tidak terdeteksi?",
+        "a": "Biasanya karena jaringan atau penyedia layanan Anda memang belum mengaktifkan IPv6, atau perangkat jaringan di tengah jalur memblokirnya. Itu bukan kesalahan pada perangkat Anda, hanya berarti lalu lintas Anda masih memakai IPv4."
+      },
+      "whatIsJitter": {
+        "q": "Apa arti jitter?",
+        "a": "Jitter adalah seberapa besar waktu tempuh berubah dari satu permintaan ke permintaan berikutnya. Jitter kecil berarti aliran data stabil; jitter besar membuat panggilan suara dan video terdengar patah-patah meski kecepatannya besar."
+      },
+      "whatIsBufferbloat": {
+        "q": "Apa itu latensi saat sibuk?",
+        "a": "Itu latensi yang diukur ketika jalur sedang dipenuhi unduhan. Jika naik jauh dibanding kondisi senggang, kemungkinan ada antrean buffer berlebih di router atau jaringan penyedia layanan."
+      },
+      "dataUsage": {
+        "q": "Berapa banyak kuota yang terpakai?",
+        "a": "Bergantung pada kecepatan koneksi Anda, karena tes berjalan berdasarkan waktu, bukan jumlah data tetap. Semakin cepat koneksi, semakin banyak data yang dipindahkan dalam durasi yang sama. Jumlah pastinya ditampilkan pada rincian setiap hasil."
+      },
+      "isDataStored": {
+        "q": "Apakah hasil tes saya disimpan di server?",
+        "a": "Tidak. Data uji berupa byte acak yang langsung dibuang, dan hasil pengukuran hanya disimpan di penyimpanan lokal peramban Anda. Anda bisa menghapusnya kapan saja dari halaman Riwayat."
+      },
+      "bestPractice": {
+        "q": "Bagaimana cara mendapatkan hasil yang paling mewakili?",
+        "a": "Tutup unduhan dan streaming yang sedang berjalan, gunakan kabel jika memungkinkan, dekati router bila memakai Wi-Fi, lalu jalankan tes beberapa kali pada jam yang berbeda dan bandingkan polanya."
+      }
+    }
+  },
+  "history": {
+    "meta": {
+      "title": "Riwayat tes kecepatan",
+      "description": "Riwayat hasil tes kecepatan Anda, tersimpan hanya di peramban ini."
+    },
+    "hero": {
+      "eyebrow": "Riwayat lokal",
+      "title": "Pola lebih berguna daripada satu angka",
+      "lead": "Semua hasil di halaman ini tersimpan di penyimpanan lokal peramban Anda dan tidak pernah dikirim ke server kami."
+    },
+    "summary": {
+      "runs": "Jumlah tes",
+      "avgDownload": "Rata-rata unduh",
+      "avgUpload": "Rata-rata unggah",
+      "avgLatency": "Rata-rata latensi",
+      "best": "Unduh tertinggi"
+    },
+    "peak": "Skala tertinggi {value} {unit}",
+    "tableCaption": "Daftar hasil tes kecepatan yang tersimpan di peramban ini",
+    "columns": {
+      "when": "Waktu"
+    },
+    "storageNote": "Riwayat disimpan di penyimpanan lokal peramban ini, maksimal 30 hasil terakhir. Membersihkan data situs pada peramban juga akan menghapusnya.",
+    "clear": "Hapus riwayat",
+    "empty": {
+      "title": "Belum ada hasil tersimpan",
+      "body": "Jalankan tes pertama Anda, lalu hasilnya akan muncul di sini untuk dibandingkan dari waktu ke waktu.",
+      "cta": "Jalankan tes"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Tentang Laju",
+      "description": "Laju adalah alat tes kecepatan internet independen yang mengutamakan transparansi metode dan privasi penggunanya."
+    },
+    "hero": {
+      "eyebrow": "Tentang",
+      "title": "Alat ukur kecil yang berusaha jujur",
+      "lead": "Laju dibuat karena banyak alat tes menampilkan angka besar tanpa menjelaskan asalnya, dan tanpa menyebut apa yang tidak bisa disimpulkan darinya."
+    },
+    "story": {
+      "p1": "Laju berawal dari kebutuhan sederhana: menjelaskan kepada orang lain kenapa koneksi yang tertulis cepat masih terasa lambat. Angka unduh saja jarang bisa menjawabnya, karena yang sering mengganggu justru latensi dan jitter.",
+      "p2": "Karena itu setiap hasil di Laju disajikan bersama konteksnya — kapan diukur, terhadap server mana, berapa lama, dan lewat berapa koneksi paralel. Parameter mesin ujinya ditampilkan langsung dari konfigurasi, bukan ditulis ulang secara manual.",
+      "p3": "Proyek ini dipelihara satu orang dan masih terus dikembangkan. Jika Anda menemukan angka yang terlihat keliru atau penjelasan yang membingungkan, kabar dari Anda akan sangat membantu."
+    },
+    "facts": {
+      "title": "Fakta singkat",
+      "maintainer": "Pemelihara",
+      "maintainerValue": "Maulana Yusup Abdullah",
+      "based": "Lokasi",
+      "since": "Sejak",
+      "independence": "Afiliasi",
+      "independenceValue": "Independen, bukan penyedia layanan internet"
+    },
+    "values": {
+      "eyebrow": "Prinsip",
+      "title": "Tiga hal yang kami pegang",
+      "items": {
+        "transparency": {
+          "title": "Terbuka soal metode",
+          "body": "Cara pengukuran, parameter, dan keterbatasannya ditulis di halaman yang bisa dibaca siapa saja, bukan disembunyikan di balik istilah teknis."
+        },
+        "privacy": {
+          "title": "Sesedikit mungkin data",
+          "body": "Tidak ada akun, tidak ada pelacak iklan, dan hasil tes tetap berada di peramban Anda. Data uji berupa byte acak yang langsung dibuang di server."
+        },
+        "accessibility": {
+          "title": "Bisa dipakai semua orang",
+          "body": "Kontras warna, navigasi papan ketik, teks alternatif, dan penghormatan pada preferensi kurangi gerak diperhatikan sejak awal, bukan ditambal belakangan."
+        }
+      }
+    },
+    "notDoing": {
+      "eyebrow": "Batasan",
+      "title": "Hal yang tidak kami lakukan",
+      "lead": "Sama pentingnya dengan daftar fitur, berikut hal-hal yang sengaja tidak ada di Laju.",
+      "items": {
+        "i1": "Kami tidak menjanjikan hasil yang sama persis dengan alat ukur resmi milik penyedia layanan.",
+        "i2": "Kami tidak menyimpan hasil tes Anda di server atau membangun profil pengguna.",
+        "i3": "Kami tidak menampilkan peringkat atau perbandingan antar penyedia layanan, karena data kami tidak cukup untuk itu.",
+        "i4": "Kami tidak mengklaim sertifikasi, akreditasi, atau penghargaan apa pun."
+      }
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Hubungi Laju",
+      "description": "Kirim pertanyaan, laporan hasil yang janggal, atau masukan tentang metode pengukuran Laju."
+    },
+    "hero": {
+      "eyebrow": "Kontak",
+      "title": "Ada yang perlu ditanyakan?",
+      "lead": "Masukan tentang angka yang terlihat aneh sangat berguna — sertakan waktu pengujian dan jenis koneksi Anda bila memungkinkan."
+    },
+    "form": {
+      "title": "Kirim pesan",
+      "lead": "Formulir ini menyusun pesan lalu membukanya di aplikasi email Anda. Tidak ada isian yang dikirim atau disimpan di server kami.",
+      "name": "Nama",
+      "reply": "Email balasan (opsional)",
+      "topic": "Topik",
+      "message": "Pesan",
+      "submit": "Buka di aplikasi email",
+      "note": "Setelah tombol ditekan, aplikasi email bawaan perangkat Anda akan terbuka dengan pesan yang sudah terisi.",
+      "subject": "Laju — {topic}",
+      "body": "Nama: {name}\nEmail balasan: {reply}\nTopik: {topic}\n\n{message}",
+      "noReply": "(tidak diisi)",
+      "topics": {
+        "general": "Pertanyaan umum",
+        "accuracy": "Hasil terlihat keliru",
+        "privacy": "Privasi dan data",
+        "partnership": "Kerja sama"
+      }
+    },
+    "channels": {
+      "email": {
+        "label": "Email",
+        "hint": "Cara paling andal untuk pertanyaan panjang."
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "hint": "Untuk pertanyaan singkat pada jam kerja."
+      },
+      "phone": {
+        "label": "Telepon",
+        "hint": "Hanya untuk hal mendesak."
+      }
+    },
+    "template": {
+      "subject": "Laju — pertanyaan",
+      "body": "Halo Laju,\n\nSaya ingin menanyakan tentang hasil tes kecepatan.\n\n",
+      "whatsapp": "Halo Laju, saya ingin menanyakan tentang hasil tes kecepatan."
+    },
+    "responseNote": "Proyek ini dipelihara di luar jam kerja utama, jadi balasan biasanya memakan waktu beberapa hari kerja."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Kebijakan privasi",
+      "description": "Data apa yang disentuh Laju, ke mana perginya, dan berapa lama disimpan."
+    },
+    "hero": {
+      "eyebrow": "Privasi",
+      "title": "Kebijakan privasi",
+      "lead": "Ringkasnya: pengukuran memakai byte acak, hasilnya tinggal di peramban Anda, dan alamat IP hanya dipakai untuk ditampilkan kembali kepada Anda."
+    },
+    "sections": {
+      "summary": {
+        "title": "Ringkasan",
+        "body": "Laju adalah alat pengukuran tanpa akun. Kami tidak meminta nama, nomor telepon, atau data pembayaran untuk menjalankan tes.\n\nHalaman ini menjelaskan apa yang terjadi pada data teknis yang tidak bisa dihindari saat sebuah situs diakses, misalnya alamat IP yang selalu terlihat oleh server mana pun yang Anda hubungi."
+      },
+      "whatWeMeasure": {
+        "title": "Data pengukuran",
+        "body": "Tes unduh mengirimkan byte acak dari server kami ke peramban Anda. Tes unggah mengirim byte acak dari peramban Anda ke server kami, lalu langsung membuangnya tanpa disimpan, dibaca, atau dianalisis. Yang dihitung hanya jumlah byte-nya.\n\nHasil pengukuran, seperti kecepatan unduh dan latensi, tidak dikirim ke server kami. Angka tersebut dihitung di peramban Anda."
+      },
+      "ipAddresses": {
+        "title": "Alamat IP",
+        "body": "Setiap kali peramban menghubungi sebuah server, server itu melihat alamat IP Anda; hal ini berlaku untuk semua situs dan tidak dapat dihindari. Server Laju menggunakan alamat tersebut hanya untuk mengembalikannya kepada Anda pada panel koneksi.\n\nKode aplikasi kami tidak menulis alamat IP ke basis data atau berkas log mana pun."
+      },
+      "thirdParties": {
+        "title": "Layanan pihak ketiga",
+        "body": "Agar alamat IPv4 dan IPv6 dapat ditampilkan sekaligus, peramban Anda menghubungi dua nama host yang masing-masing hanya melayani satu jenis alamat. Layanan tersebut menerima alamat IP Anda karena memang itulah yang mereka kembalikan, dan mereka memiliki kebijakan privasinya sendiri.\n\nAlamat lengkap layanan yang dipakai pada penerapan ini dicantumkan di halaman Kepatuhan. Pengelola penerapan dapat menonaktifkan pemeriksaan ini, dan panel koneksi akan menampilkan hanya alamat yang dilihat server kami.\n\nFon web dimuat dari Google Fonts, sehingga peramban Anda menghubungi layanan tersebut saat memuat halaman."
+      },
+      "storage": {
+        "title": "Penyimpanan di perangkat Anda",
+        "body": "Riwayat hasil tes disimpan di penyimpanan lokal peramban Anda, dibatasi 30 hasil terakhir. Data ini tidak pernah dikirim ke server kami dan dapat dihapus kapan saja melalui tombol pada halaman Riwayat atau dengan membersihkan data situs di peramban."
+      },
+      "cookies": {
+        "title": "Cookie",
+        "body": "Kami hanya menggunakan satu cookie fungsional untuk mengingat pilihan bahasa Anda. Tidak ada cookie iklan, pelacakan lintas situs, atau sidik jari perangkat."
+      },
+      "analytics": {
+        "title": "Analitik",
+        "body": "Saat dokumen ini terakhir diperbarui, situs ini tidak memasang layanan analitik pihak ketiga. Jika hal itu berubah, halaman ini dan halaman Kepatuhan akan diperbarui sebelum layanan tersebut diaktifkan."
+      },
+      "children": {
+        "title": "Anak-anak",
+        "body": "Layanan ini ditujukan untuk umum dan tidak dirancang khusus untuk anak-anak. Karena tidak ada akun maupun pengumpulan profil, kami tidak mengumpulkan data pribadi anak secara sengaja."
+      },
+      "rights": {
+        "title": "Hak Anda",
+        "body": "Karena kami tidak menyimpan data yang dapat mengidentifikasi Anda, tidak ada arsip pribadi yang bisa kami kirimkan atau hapus atas permintaan. Data yang ada berada di perangkat Anda dan sepenuhnya Anda kendalikan.\n\nJika Anda tetap ingin memastikan sesuatu, silakan hubungi kami lewat halaman Kontak."
+      },
+      "changes": {
+        "title": "Perubahan kebijakan",
+        "body": "Perubahan pada cara kerja pengukuran, penyimpanan, atau layanan pihak ketiga selalu disertai pembaruan halaman ini beserta tanggal revisinya."
+      },
+      "contact": {
+        "title": "Menghubungi kami",
+        "body": "Pertanyaan tentang kebijakan ini dapat dikirim melalui halaman Kontak."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Ketentuan penggunaan",
+      "description": "Ketentuan penggunaan layanan tes kecepatan Laju."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Ketentuan penggunaan",
+      "lead": "Ketentuan singkat untuk sebuah alat ukur gratis: pakai sewajarnya, dan pahami bahwa hasilnya bersifat indikatif."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Persetujuan",
+        "body": "Dengan menggunakan Laju, Anda menyetujui ketentuan di halaman ini. Bila Anda tidak menyetujuinya, mohon tidak menggunakan layanan ini."
+      },
+      "service": {
+        "title": "Layanan yang disediakan",
+        "body": "Laju menyediakan pengukuran kecepatan koneksi berbasis peramban dan menampilkan informasi teknis tentang koneksi Anda. Layanan diberikan gratis dan tanpa akun."
+      },
+      "accuracy": {
+        "title": "Sifat hasil pengukuran",
+        "body": "Hasil pengukuran bersifat indikatif. Angka yang ditampilkan menggambarkan jalur antara peramban Anda dan satu server uji pada saat pengujian, dan dipengaruhi perangkat, jaringan lokal, serta beban jaringan saat itu.\n\nHasil Laju tidak dimaksudkan sebagai bukti resmi untuk sengketa dengan penyedia layanan internet Anda."
+      },
+      "acceptableUse": {
+        "title": "Penggunaan yang wajar",
+        "body": "Endpoint pengukuran disediakan untuk pengujian oleh pengguna melalui antarmuka situs ini. Mohon tidak menjalankan pengujian otomatis bervolume tinggi, membebani layanan secara berlebihan, atau menggunakannya sebagai sumber lalu lintas untuk keperluan lain.\n\nKami dapat membatasi atau memblokir permintaan yang mengganggu ketersediaan layanan bagi pengguna lain."
+      },
+      "availability": {
+        "title": "Ketersediaan",
+        "body": "Layanan dapat berhenti sementara untuk pemeliharaan, pembaruan, atau karena kendala pada penyedia infrastruktur. Kami tidak menjanjikan tingkat ketersediaan tertentu."
+      },
+      "intellectualProperty": {
+        "title": "Hak atas konten",
+        "body": "Nama, tampilan, dan teks pada situs ini adalah milik pemelihara proyek. Hasil pengukuran Anda sendiri bebas Anda gunakan, termasuk untuk dibagikan."
+      },
+      "liability": {
+        "title": "Batasan tanggung jawab",
+        "body": "Layanan diberikan apa adanya. Sejauh diizinkan hukum yang berlaku, kami tidak bertanggung jawab atas kerugian yang timbul dari penggunaan atau ketidaktersediaan layanan, termasuk keputusan yang diambil berdasarkan hasil pengukuran."
+      },
+      "law": {
+        "title": "Hukum yang berlaku",
+        "body": "Ketentuan ini tunduk pada hukum Republik Indonesia."
+      },
+      "changes": {
+        "title": "Perubahan ketentuan",
+        "body": "Ketentuan dapat diperbarui seiring perkembangan layanan. Tanggal revisi terakhir selalu ditampilkan di bagian atas halaman ini."
+      },
+      "contact": {
+        "title": "Menghubungi kami",
+        "body": "Pertanyaan tentang ketentuan ini dapat dikirim melalui halaman Kontak."
+      }
+    }
+  },
+  "compliance": {
+    "meta": {
+      "title": "Kepatuhan dan penanganan data",
+      "description": "Matriks penanganan data Laju: apa yang disentuh, untuk apa, di mana disimpan, dan berapa lama."
+    },
+    "hero": {
+      "eyebrow": "Kepatuhan",
+      "title": "Apa yang sebenarnya terjadi pada data Anda",
+      "lead": "Halaman ini merangkum penanganan data, layanan pihak ketiga yang dipakai, dan komitmen yang kami usahakan penuhi. Halaman ini wajib diperbarui setiap kali cara kerja aplikasi berubah."
+    },
+    "matrix": {
+      "eyebrow": "Matriks data",
+      "title": "Setiap data yang tersentuh",
+      "lead": "Satu baris untuk setiap jenis data yang muncul saat Anda memakai Laju.",
+      "caption": "Tabel penanganan data pada layanan Laju",
+      "columns": {
+        "item": "Data",
+        "purpose": "Tujuan",
+        "location": "Lokasi",
+        "retention": "Retensi"
+      },
+      "rows": {
+        "measurementPayloads": {
+          "item": "Data uji",
+          "purpose": "Mengukur kecepatan unduh dan unggah",
+          "location": "Memori sementara pada server uji",
+          "retention": "Dibuang seketika, tidak pernah ditulis ke penyimpanan"
+        },
+        "observedIp": {
+          "item": "Alamat IP yang dilihat server kami",
+          "purpose": "Ditampilkan kembali pada panel koneksi",
+          "location": "Dihitung per permintaan",
+          "retention": "Tidak dicatat oleh kode aplikasi"
+        },
+        "probeIp": {
+          "item": "Alamat IP pada pemeriksaan IPv4 dan IPv6",
+          "purpose": "Menampilkan kedua jenis alamat sekaligus",
+          "location": "Layanan pihak ketiga yang dihubungi langsung oleh peramban",
+          "retention": "Mengikuti kebijakan penyedia layanan tersebut"
+        },
+        "localHistory": {
+          "item": "Riwayat hasil tes",
+          "purpose": "Membandingkan hasil dari waktu ke waktu",
+          "location": "Penyimpanan lokal peramban Anda",
+          "retention": "30 hasil terakhir, dapat dihapus kapan saja"
+        },
+        "localePreference": {
+          "item": "Pilihan bahasa",
+          "purpose": "Mengingat bahasa yang Anda pilih",
+          "location": "Cookie fungsional di peramban Anda",
+          "retention": "Sampai Anda menghapus data situs"
+        },
+        "platformLogs": {
+          "item": "Log tingkat infrastruktur",
+          "purpose": "Operasional dan keamanan penyedia hosting",
+          "location": "Penyedia hosting tempat situs ini dijalankan",
+          "retention": "Mengikuti kebijakan penyedia hosting"
+        }
+      }
+    },
+    "probes": {
+      "title": "Endpoint pihak ketiga pada penerapan ini",
+      "note": "Alamat di atas dibaca langsung dari konfigurasi penerapan yang sedang berjalan, sehingga daftar ini tidak bisa keliru terhadap kode.",
+      "disabled": "Pemeriksaan pihak ketiga dinonaktifkan pada penerapan ini; panel koneksi hanya menampilkan alamat yang dilihat server kami."
+    },
+    "sections": {
+      "scope": {
+        "title": "Cakupan",
+        "body": "Dokumen ini berlaku untuk situs Laju beserta endpoint pengukurannya. Dokumen ini bersifat penjelasan, bukan sertifikasi: kami tidak mengklaim audit atau akreditasi pihak ketiga apa pun."
+      },
+      "dataMinimisation": {
+        "title": "Meminimalkan data",
+        "body": "Layanan dirancang agar berjalan tanpa akun, tanpa formulir wajib, dan tanpa penyimpanan hasil di server. Data uji berupa byte acak yang tidak mengandung informasi apa pun tentang Anda dan langsung dibuang."
+      },
+      "ipDisclosure": {
+        "title": "Keterbukaan tentang alamat IP",
+        "body": "Sebuah halaman web tidak dapat menanyakan alamat IP langsung kepada sistem operasi. Yang bisa dilakukan hanyalah menanyakan kepada sebuah server, alamat mana yang ia lihat.\n\nKarena satu server hanya melihat satu jenis alamat, menampilkan IPv4 dan IPv6 sekaligus mengharuskan peramban menghubungi dua nama host berbeda. Kami menyebutkan hal ini secara eksplisit alih-alih menampilkannya seolah-olah datang dari perangkat Anda."
+      },
+      "thirdParties": {
+        "title": "Pihak ketiga",
+        "body": "Penerapan ini memakai endpoint pemeriksaan alamat yang tercantum di atas, dan memuat fon web dari Google Fonts. Tidak ada jaringan iklan, tidak ada pelacak lintas situs, dan tidak ada penyematan pihak ketiga lain di halaman."
+      },
+      "measurementHonesty": {
+        "title": "Kejujuran pengukuran",
+        "body": "Parameter mesin uji ditampilkan di halaman Cara Kerja dan dibaca langsung dari konfigurasi program, sehingga dokumentasi tidak bisa menyimpang dari perilaku sebenarnya.\n\nKeterbatasan metode dicantumkan pada halaman yang sama. Perkiraan aktivitas seperti streaming atau panggilan video ditandai sebagai perkiraan, bukan jaminan."
+      },
+      "accessibility": {
+        "title": "Aksesibilitas",
+        "body": "Antarmuka diusahakan memenuhi praktik yang lazim: kontras yang memadai, fokus papan ketik yang terlihat, tautan lewati konten, elemen semantik, dan penghormatan pada preferensi kurangi gerak.\n\nKami belum melakukan audit aksesibilitas formal, jadi kami tidak mengklaim tingkat kepatuhan WCAG tertentu. Laporan masalah aksesibilitas sangat kami hargai."
+      },
+      "security": {
+        "title": "Keamanan",
+        "body": "Situs dilayani melalui HTTPS. Endpoint pengukuran memiliki batas ukuran permintaan dan mengembalikan header yang melarang penyimpanan cache, agar hasil tidak dipalsukan oleh cache di tengah jalur.\n\nKarena tidak ada basis data pengguna, tidak ada arsip kredensial atau riwayat pribadi yang dapat bocor dari sisi kami."
+      },
+      "openness": {
+        "title": "Keterbukaan",
+        "body": "Metode, parameter, dan batasan ditulis terbuka di situs ini. Bila Anda menemukan ketidaksesuaian antara yang tertulis dan yang terjadi, laporan Anda akan kami tindak lanjuti dan halaman ini diperbarui."
+      },
+      "limitations": {
+        "title": "Batasan yang kami akui",
+        "body": "Kami tidak mengoperasikan jaringan server uji global, sehingga hasil tidak selalu mewakili jalur ke layanan lain. Kami juga bergantung pada penyedia hosting untuk log tingkat infrastruktur yang berada di luar kendali kode kami.\n\nKami tidak memegang sertifikasi ISO, SOC, atau sejenisnya, dan tidak menampilkan lencana kepatuhan yang tidak kami miliki."
+      },
+      "contact": {
+        "title": "Menghubungi kami",
+        "body": "Pertanyaan atau laporan terkait halaman ini dapat dikirim melalui halaman Kontak."
+      }
+    }
+  },
+  "error": {
+    "notFoundTitle": "Halaman tidak ditemukan",
+    "notFoundBody": "Tautan yang Anda buka mungkin sudah berubah atau tidak pernah ada.",
+    "genericTitle": "Terjadi kesalahan",
+    "genericBody": "Ada yang tidak beres di sisi kami. Coba muat ulang halaman beberapa saat lagi.",
+    "back": "Kembali ke tes kecepatan"
+  }
+}

@@ -1,0 +1,77 @@
+// =============================================================================
+// Design tokens as CSS custom properties (runtime values).
+//
+// Theme: "Signal Dark" — a night-lab instrument panel. Near-black indigo glass,
+// hairline borders, and a single brand spectrum (cyan → indigo → magenta) that
+// every measurement is drawn with. One dark theme only; there is no light mode.
+// =============================================================================
+:root {
+  // --- Spectrum (brand) ------------------------------------------------------
+  --c-cyan: #22e1ff;
+  --c-cyan-dim: #12a3bd;
+  --c-indigo: #6c5cff;
+  --c-indigo-dim: #4a3ec4;
+  --c-magenta: #ff4fd8;
+  --c-magenta-dim: #c22ea3;
+  --c-lime: #b8ff3c;
+  --c-amber: #ffc24b;
+  --c-rose: #ff5470;
+
+  // --- Neutrals --------------------------------------------------------------
+  --c-void: #05070f;        // page background
+  --c-abyss: #080c18;       // deeper wells / footer
+  --c-surface: #0d1322;     // panels
+  --c-surface-2: #141c30;   // raised rows, inputs
+  --c-surface-3: #1c2540;   // hover
+  --c-line: rgb(140 165 255 / 0.14);
+  --c-line-strong: rgb(140 165 255 / 0.26);
+  --c-text: #eef2ff;
+  --c-text-soft: rgb(214 223 255 / 0.74);
+  --c-text-muted: rgb(184 196 235 / 0.5);
+  --c-text-inverse: #05070f;
+
+  // --- Semantic measurement roles -------------------------------------------
+  // Each metric owns one hue everywhere it appears: gauge, chart, tile, legend.
+  --c-download: var(--c-cyan);
+  --c-upload: var(--c-magenta);
+  --c-latency: var(--c-amber);
+  --c-jitter: var(--c-indigo);
+  --c-good: var(--c-lime);
+  --c-warn: var(--c-amber);
+  --c-bad: var(--c-rose);
+
+  // --- Gradients -------------------------------------------------------------
+  --grad-spectrum: linear-gradient(100deg, #22e1ff 0%, #6c5cff 48%, #ff4fd8 100%);
+  --grad-download: linear-gradient(180deg, #7cf3ff 0%, #22e1ff 55%, #4a7dff 100%);
+  --grad-upload: linear-gradient(180deg, #ff9be9 0%, #ff4fd8 55%, #8b3ce0 100%);
+  --grad-aurora:
+    radial-gradient(60rem 40rem at 12% -10%, rgb(34 225 255 / 0.16), transparent 60%),
+    radial-gradient(52rem 38rem at 88% 4%, rgb(255 79 216 / 0.14), transparent 62%),
+    radial-gradient(70rem 50rem at 50% 108%, rgb(108 92 255 / 0.18), transparent 66%);
+
+  // --- Radii -----------------------------------------------------------------
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  // --- Shadows / glows -------------------------------------------------------
+  --shadow-panel: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 18px 48px rgb(0 0 0 / 0.45);
+  --shadow-lift: 0 24px 60px rgb(0 0 0 / 0.55);
+  --glow-cyan: 0 0 40px rgb(34 225 255 / 0.35);
+  --glow-magenta: 0 0 40px rgb(255 79 216 / 0.32);
+
+  // --- Motion ----------------------------------------------------------------
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 150ms;
+  --dur: 260ms;
+  --dur-slow: 520ms;
+
+  // --- Layout ----------------------------------------------------------------
+  --header-h: 68px;
+
+  color-scheme: dark;
+}

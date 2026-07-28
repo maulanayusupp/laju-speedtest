@@ -1,0 +1,633 @@
+{
+  "meta": {
+    "tagline": "A transparent internet speed test"
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "language": "Choose language",
+    "primaryNav": "Primary navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "sections": "Section list"
+  },
+  "common": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "loading": "Loading…",
+    "onThisPage": "On this page",
+    "lastUpdated": "Last updated {date}"
+  },
+  "units": {
+    "mbps": "Mbps",
+    "ms": "ms",
+    "seconds": "seconds"
+  },
+  "nav": {
+    "test": "Speed Test",
+    "howItWorks": "How It Works",
+    "history": "History",
+    "about": "About",
+    "contact": "Contact",
+    "compliance": "Compliance",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "footer": {
+    "blurb": "Laju measures download, upload, latency and jitter straight from your browser, and shows your IPv4 and IPv6 addresses exactly as they are.",
+    "disclaimer": "Laju is an independent measurement tool. We are not an internet service provider and are not affiliated with any operator. Results describe the path between your browser and our test server at the moment of the run.",
+    "localData": "Test history stays in your own browser.",
+    "groups": {
+      "product": "Product",
+      "company": "Project",
+      "legal": "Legal"
+    }
+  },
+  "grades": {
+    "excellent": "Excellent",
+    "good": "Good",
+    "fair": "Fair",
+    "poor": "Poor"
+  },
+  "metrics": {
+    "download": "Download",
+    "upload": "Upload",
+    "latency": "Latency",
+    "jitter": "Jitter",
+    "loadedLatency": "Latency under load",
+    "transferHint": "about {value} MB per second",
+    "latencyHint": "average {value} ms",
+    "lossHint": "{value}% of probes did not arrive"
+  },
+  "stage": {
+    "start": "Start test",
+    "stop": "Stop",
+    "again": "Test again",
+    "viewHistory": "View history",
+    "error": "The test could not finish. Check your connection and try again.",
+    "progressLabel": "Test progress",
+    "noTrace": "The chart appears once measurement starts.",
+    "peak": "peak",
+    "phases": {
+      "idle": "Ready to test",
+      "latency": "Measuring latency",
+      "download": "Measuring download",
+      "upload": "Measuring upload",
+      "done": "Finished",
+      "error": "Failed"
+    },
+    "steps": {
+      "latency": "Latency",
+      "download": "Download",
+      "upload": "Upload"
+    }
+  },
+  "connection": {
+    "title": "Your connection",
+    "lead": "IPv4 and IPv6 are checked through two separate hostnames, because a single server can only ever see one of them.",
+    "ipv4": "IPv4 address",
+    "ipv6": "IPv6 address",
+    "notDetected": "Not detected",
+    "noIpv6": "Your network appears to have no IPv6 connectivity yet.",
+    "probeDisabled": "Third-party lookups are disabled on this deployment.",
+    "refresh": "Re-check connection",
+    "unknown": "Not available",
+    "localOrigin": "Local server",
+    "disclosure": "Address detection uses two third-party services that return nothing but your IP address. Details are in the",
+    "disclosureLink": "privacy policy.",
+    "facts": {
+      "location": "Approximate location",
+      "protocol": "Protocol",
+      "serverRegion": "Test server region"
+    }
+  },
+  "capabilities": {
+    "title": "What this speed likely supports",
+    "items": {
+      "browsing": "Web and social browsing",
+      "videoCall": "HD video calls",
+      "hdVideo": "HD video streaming",
+      "uhdVideo": "4K video streaming",
+      "cloudGaming": "1080p cloud gaming",
+      "largeFiles": "Large file sharing and remote work"
+    },
+    "requirementDown": "needs roughly {down} Mbps down",
+    "requirementBoth": "needs roughly {down} Mbps down and {up} Mbps up",
+    "supported": "Supported",
+    "notSupported": "Not supported yet",
+    "disclaimer": "These thresholds are common round numbers for a single activity on an otherwise idle network. Real requirements vary by service, and latency, jitter, Wi-Fi quality and the number of devices all matter too."
+  },
+  "details": {
+    "title": "Measurement details",
+    "bufferbloat": "Responsiveness under load",
+    "bufferbloatBody": "While the line was saturated by the download, latency rose by about {value} ms compared with idle. A large increase usually feels like lag on calls or in games, even when the speed figure looks high.",
+    "rows": {
+      "loadedLatency": "Latency under load",
+      "idleLatency": "Idle latency range",
+      "loss": "Failed probes",
+      "streams": "Parallel connections (down / up)",
+      "data": "Data used",
+      "server": "Test server region"
+    }
+  },
+  "share": {
+    "title": "Laju speed test result",
+    "measuredAt": "Measured at",
+    "source": "Measured with Laju, a browser-based speed test.",
+    "copy": "Copy result",
+    "copied": "Result copied"
+  },
+  "home": {
+    "meta": {
+      "title": "Internet speed test with IPv4 and IPv6",
+      "description": "Measure download, upload, latency and jitter straight from your browser. Laju also shows your IPv4 and IPv6 addresses and explains how every number is produced."
+    },
+    "hero": {
+      "title": "Measure your connection, then understand the numbers",
+      "lead": "One tap measures download, upload, latency and jitter — alongside your IPv4 and IPv6 addresses, and an open explanation of how each figure is calculated."
+    },
+    "why": {
+      "eyebrow": "Why Laju",
+      "title": "A number on its own is not enough",
+      "lead": "High throughput does not always feel fast. Laju surfaces the things that are usually hidden, so you can judge for yourself."
+    },
+    "features": {
+      "dualStack": {
+        "title": "IPv4 and IPv6 together",
+        "body": "Most tools show only one address. Laju checks both through separate hostnames, so you can tell whether your network is IPv6-ready."
+      },
+      "loadedLatency": {
+        "title": "Latency while the line is busy",
+        "body": "We measure latency again during the download. The difference explains why video calls stutter on connections that are supposedly fast."
+      },
+      "noAccount": {
+        "title": "No account, no ads",
+        "body": "No sign-up, no advertising trackers, and test history that never leaves your own browser."
+      },
+      "openMethod": {
+        "title": "A method you can inspect",
+        "body": "Durations, parallel connections and warm-up windows are published on the How It Works page instead of being treated as a secret."
+      }
+    },
+    "method": {
+      "eyebrow": "Method",
+      "title": "We write down what is actually measured",
+      "lead": "Every run pulls random data from our own server, counts the bytes that truly arrive, and discards the warm-up window before averaging.",
+      "cta": "Read the method",
+      "note": "A Laju result describes the path between your browser and one test server at that moment. It is not an official measurement for a claim against your provider, and it can differ from tools that use other servers, durations or connection counts."
+    }
+  },
+  "cta": {
+    "title": "Ready to see how your connection is doing?",
+    "lead": "The test takes about half a minute and asks for no personal details at all.",
+    "primary": "Run the test",
+    "secondary": "Learn the method"
+  },
+  "howItWorks": {
+    "meta": {
+      "title": "How the Laju speed test works",
+      "description": "A full explanation of the measurement order, the parameters in use, and the limits of a browser-based speed test."
+    },
+    "hero": {
+      "eyebrow": "Methodology",
+      "title": "How Laju measures your connection",
+      "lead": "Four steps, published parameters, and an honest list of what the result cannot tell you."
+    },
+    "steps": {
+      "latency": {
+        "title": "1. Latency and jitter",
+        "body": "The browser sends a series of tiny, uncacheable requests. The fastest round trip becomes the latency figure, while jitter is the mean difference between consecutive probes. This is HTTP rather than ICMP, so the number reads slightly higher than a ping command."
+      },
+      "download": {
+        "title": "2. Download",
+        "body": "Several parallel connections pull random data from our server and bytes are counted as they land. Random data is used because it cannot be compressed in transit, so nothing inflates the figure."
+      },
+      "loaded": {
+        "title": "3. Latency under load",
+        "body": "While the download runs, latency is measured again. A large increase points to over-full buffers somewhere along the path — the usual reason for lag on a line that looks fast."
+      },
+      "upload": {
+        "title": "4. Upload",
+        "body": "Random data is sent back to the server and discarded on arrival. Browsers report upload progress slightly ahead of the wire, which is why the upload warm-up window is the longer of the two."
+      }
+    },
+    "parameters": {
+      "eyebrow": "Parameters",
+      "title": "The numbers the engine runs on",
+      "lead": "These values are read straight from the measurement configuration, so this page always matches what actually runs.",
+      "rows": {
+        "latencySamples": "Latency probes",
+        "downloadDuration": "Download phase duration",
+        "uploadDuration": "Upload phase duration",
+        "downloadStreams": "Parallel download connections",
+        "uploadStreams": "Parallel upload connections",
+        "warmup": "Warm-up discarded (down / up)"
+      }
+    },
+    "limits": {
+      "eyebrow": "Limits",
+      "title": "What this result cannot tell you",
+      "lead": "We would rather state the limits than let a number claim more than it can support.",
+      "items": {
+        "singleServer": "The test runs against a single server, not a global network. The path to other services may look different.",
+        "browserOverhead": "Measurement happens inside a browser over HTTPS, so there is encryption and processing cost a system-level tool would not pay.",
+        "wifi": "Wi-Fi, tired cabling or an ageing router is often the slowest link, rather than the subscription itself.",
+        "vpn": "A VPN, proxy or network-level ad blocker changes the result because traffic takes an extra path.",
+        "sharedLine": "Other devices using the same connection during the run will pull the numbers down.",
+        "uploadReporting": "Upload progress is reported by the browser from its socket buffers, so the first seconds tend to look faster than reality."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "Common questions",
+    "title": "Things people ask",
+    "items": {
+      "whyDifferent": {
+        "q": "Why does this differ from other speed tests?",
+        "a": "Every tool uses different servers, durations, connection counts and averaging rules. Differences of tens of percent between tools are normal. Comparing results from the same tool over time is far more useful."
+      },
+      "ipv6Missing": {
+        "q": "Why is my IPv6 address not detected?",
+        "a": "Usually because your network or provider has not enabled IPv6, or a device along the path blocks it. It is not a fault on your machine; it simply means your traffic still travels over IPv4."
+      },
+      "whatIsJitter": {
+        "q": "What does jitter mean?",
+        "a": "Jitter is how much the round-trip time changes from one probe to the next. Low jitter means a steady stream; high jitter makes voice and video sound choppy even when throughput is large."
+      },
+      "whatIsBufferbloat": {
+        "q": "What is latency under load?",
+        "a": "It is the latency measured while the line is saturated by a download. If it rises far above the idle figure, there are probably over-full buffers in your router or in the provider network."
+      },
+      "dataUsage": {
+        "q": "How much data does a test use?",
+        "a": "It depends on your speed, because the test runs for a fixed time rather than a fixed size. A faster connection moves more data in the same window. The exact amount is shown in the details of every result."
+      },
+      "isDataStored": {
+        "q": "Are my results stored on your server?",
+        "a": "No. The test payload is random bytes that are discarded immediately, and results are kept only in your browser's local storage. You can erase them at any time from the History page."
+      },
+      "bestPractice": {
+        "q": "How do I get the most representative result?",
+        "a": "Close active downloads and streams, use a cable if you can, move closer to the router on Wi-Fi, then run the test a few times at different hours and compare the pattern."
+      }
+    }
+  },
+  "history": {
+    "meta": {
+      "title": "Speed test history",
+      "description": "Your speed test history, stored in this browser only."
+    },
+    "hero": {
+      "eyebrow": "Local history",
+      "title": "A pattern says more than a single number",
+      "lead": "Everything on this page lives in your browser's local storage and is never sent to our servers."
+    },
+    "summary": {
+      "runs": "Tests recorded",
+      "avgDownload": "Average download",
+      "avgUpload": "Average upload",
+      "avgLatency": "Average latency",
+      "best": "Best download"
+    },
+    "peak": "Scale peaks at {value} {unit}",
+    "tableCaption": "Speed test results stored in this browser",
+    "columns": {
+      "when": "When"
+    },
+    "storageNote": "History lives in this browser's local storage, capped at the 30 most recent results. Clearing site data in your browser removes it as well.",
+    "clear": "Clear history",
+    "empty": {
+      "title": "No results stored yet",
+      "body": "Run your first test and the result will appear here, ready to compare over time.",
+      "cta": "Run the test"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Laju",
+      "description": "Laju is an independent internet speed test built around transparent methodology and user privacy."
+    },
+    "hero": {
+      "eyebrow": "About",
+      "title": "A small measuring tool that tries to be honest",
+      "lead": "Laju exists because too many speed tests show a big number without explaining where it came from, or what it cannot prove."
+    },
+    "story": {
+      "p1": "Laju started from a simple need: explaining to someone why a connection sold as fast still feels slow. A download figure alone rarely answers that, because latency and jitter are usually what gets in the way.",
+      "p2": "So every result here comes with its context — when it was measured, against which server, for how long, and over how many parallel connections. The engine parameters are rendered straight from configuration rather than retyped by hand.",
+      "p3": "The project is maintained by one person and is still growing. If you spot a number that looks wrong or an explanation that reads badly, hearing about it genuinely helps."
+    },
+    "facts": {
+      "title": "Quick facts",
+      "maintainer": "Maintainer",
+      "maintainerValue": "Maulana Yusup Abdullah",
+      "based": "Based in",
+      "since": "Since",
+      "independence": "Affiliation",
+      "independenceValue": "Independent, not an internet provider"
+    },
+    "values": {
+      "eyebrow": "Principles",
+      "title": "Three things we hold to",
+      "items": {
+        "transparency": {
+          "title": "Open about the method",
+          "body": "How the measurement works, which parameters it uses and where it falls short are written on a page anyone can read, not buried in jargon."
+        },
+        "privacy": {
+          "title": "As little data as possible",
+          "body": "No accounts, no advertising trackers, and results that stay in your browser. The test payload is random bytes the server throws away."
+        },
+        "accessibility": {
+          "title": "Usable by everyone",
+          "body": "Colour contrast, keyboard navigation, alternative text and reduced-motion preferences were considered from the start rather than patched on later."
+        }
+      }
+    },
+    "notDoing": {
+      "eyebrow": "Boundaries",
+      "title": "What we deliberately do not do",
+      "lead": "Just as important as a feature list: the things Laju intentionally leaves out.",
+      "items": {
+        "i1": "We do not promise results identical to an operator's own official measurement equipment.",
+        "i2": "We do not store your results on a server or build user profiles.",
+        "i3": "We do not publish provider rankings or comparisons, because our data is not sufficient for that.",
+        "i4": "We do not claim any certification, accreditation or award."
+      }
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Laju",
+      "description": "Send a question, report a result that looks wrong, or share feedback about the Laju measurement method."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Something you want to ask?",
+      "lead": "Reports about numbers that look odd are especially useful — include the time of the run and the kind of connection you were on if you can."
+    },
+    "form": {
+      "title": "Send a message",
+      "lead": "This form composes a message and opens it in your own email app. Nothing you type is sent to or stored on our servers.",
+      "name": "Name",
+      "reply": "Reply email (optional)",
+      "topic": "Topic",
+      "message": "Message",
+      "submit": "Open in email app",
+      "note": "After you press the button, your device's default email app opens with the message already filled in.",
+      "subject": "Laju — {topic}",
+      "body": "Name: {name}\nReply email: {reply}\nTopic: {topic}\n\n{message}",
+      "noReply": "(not provided)",
+      "topics": {
+        "general": "General question",
+        "accuracy": "A result looks wrong",
+        "privacy": "Privacy and data",
+        "partnership": "Working together"
+      }
+    },
+    "channels": {
+      "email": {
+        "label": "Email",
+        "hint": "The most reliable route for longer questions."
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "hint": "For short questions during working hours."
+      },
+      "phone": {
+        "label": "Phone",
+        "hint": "For urgent matters only."
+      }
+    },
+    "template": {
+      "subject": "Laju — question",
+      "body": "Hello Laju,\n\nI have a question about a speed test result.\n\n",
+      "whatsapp": "Hello Laju, I have a question about a speed test result."
+    },
+    "responseNote": "This project is maintained outside of main working hours, so replies usually take a few business days."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy policy",
+      "description": "What data Laju touches, where it goes, and how long it is kept."
+    },
+    "hero": {
+      "eyebrow": "Privacy",
+      "title": "Privacy policy",
+      "lead": "The short version: measurements use random bytes, results stay in your browser, and your IP address is used only to show it back to you."
+    },
+    "sections": {
+      "summary": {
+        "title": "Summary",
+        "body": "Laju is a measurement tool without accounts. We do not ask for a name, phone number or payment details in order to run a test.\n\nThis page explains what happens to the technical data that is unavoidable whenever a site is loaded, such as the IP address that every server you contact can see."
+      },
+      "whatWeMeasure": {
+        "title": "Measurement data",
+        "body": "The download test sends random bytes from our server to your browser. The upload test sends random bytes from your browser to our server, which discards them immediately without storing, reading or analysing them. Only the byte count is used.\n\nMeasurement results such as download speed and latency are not sent to our servers. Those figures are computed in your browser."
+      },
+      "ipAddresses": {
+        "title": "IP addresses",
+        "body": "Whenever a browser contacts a server, that server sees your IP address; this is true of every website and cannot be avoided. The Laju server uses that address only to return it to you in the connection panel.\n\nOur application code does not write IP addresses to any database or log file."
+      },
+      "thirdParties": {
+        "title": "Third-party services",
+        "body": "So that both IPv4 and IPv6 can be shown at once, your browser contacts two hostnames that each serve a single address family. Those services receive your IP address, because returning it is precisely what they do, and they have their own privacy policies.\n\nThe exact endpoints used by this deployment are listed on the Compliance page. Whoever runs the deployment can disable these lookups, in which case the connection panel shows only the address our own server sees.\n\nWeb fonts are loaded from Google Fonts, so your browser contacts that service while the page loads."
+      },
+      "storage": {
+        "title": "Storage on your device",
+        "body": "Test history is kept in your browser's local storage, capped at the 30 most recent results. It is never sent to our servers and can be erased at any time with the button on the History page or by clearing site data in your browser."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "body": "We use a single functional cookie to remember your language choice. There are no advertising cookies, no cross-site tracking and no device fingerprinting."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "body": "As of the last update to this document, the site runs no third-party analytics. If that changes, this page and the Compliance page will be updated before such a service is enabled."
+      },
+      "children": {
+        "title": "Children",
+        "body": "The service is aimed at a general audience and is not designed specifically for children. Because there are no accounts and no profiling, we do not knowingly collect personal data from children."
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": "Because we hold no data that identifies you, there is no personal archive we could export or delete on request. What exists sits on your device and is entirely under your control.\n\nIf you would still like to check something, please get in touch through the Contact page."
+      },
+      "changes": {
+        "title": "Changes to this policy",
+        "body": "Any change to how measurement, storage or third-party services work comes with an update to this page and its revision date."
+      },
+      "contact": {
+        "title": "Contacting us",
+        "body": "Questions about this policy can be sent through the Contact page."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of use",
+      "description": "Terms of use for the Laju speed test service."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Terms of use",
+      "lead": "Short terms for a free measuring tool: use it reasonably, and treat the results as indicative."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance",
+        "body": "By using Laju you agree to the terms on this page. If you do not agree with them, please do not use the service."
+      },
+      "service": {
+        "title": "What the service provides",
+        "body": "Laju provides browser-based connection measurements and displays technical information about your connection. It is offered free of charge and without accounts."
+      },
+      "accuracy": {
+        "title": "Nature of the results",
+        "body": "Results are indicative. The figures describe the path between your browser and a single test server at the time of the run, and are affected by your device, your local network and the load on the network at that moment.\n\nLaju results are not intended as formal evidence in a dispute with your internet service provider."
+      },
+      "acceptableUse": {
+        "title": "Acceptable use",
+        "body": "The measurement endpoints exist for people testing through this site's interface. Please do not run high-volume automated testing, place excessive load on the service, or use it as a traffic source for other purposes.\n\nWe may rate-limit or block requests that harm availability for other people."
+      },
+      "availability": {
+        "title": "Availability",
+        "body": "The service may pause for maintenance, updates or problems at our infrastructure provider. We do not promise any particular level of availability."
+      },
+      "intellectualProperty": {
+        "title": "Content rights",
+        "body": "The name, design and written content of this site belong to the project maintainer. Your own measurement results are yours to use and share freely."
+      },
+      "liability": {
+        "title": "Limitation of liability",
+        "body": "The service is provided as is. To the extent permitted by applicable law, we are not liable for losses arising from use or unavailability of the service, including decisions made on the basis of a measurement."
+      },
+      "law": {
+        "title": "Governing law",
+        "body": "These terms are governed by the laws of the Republic of Indonesia."
+      },
+      "changes": {
+        "title": "Changes to these terms",
+        "body": "The terms may be updated as the service develops. The date of the last revision is always shown at the top of this page."
+      },
+      "contact": {
+        "title": "Contacting us",
+        "body": "Questions about these terms can be sent through the Contact page."
+      }
+    }
+  },
+  "compliance": {
+    "meta": {
+      "title": "Compliance and data handling",
+      "description": "The Laju data-handling matrix: what is touched, why, where it lives and for how long."
+    },
+    "hero": {
+      "eyebrow": "Compliance",
+      "title": "What actually happens to your data",
+      "lead": "This page sets out data handling, the third-party services in use, and the commitments we work to. It must be updated whenever the application's behaviour changes."
+    },
+    "matrix": {
+      "eyebrow": "Data matrix",
+      "title": "Every piece of data involved",
+      "lead": "One row for each kind of data that appears while you use Laju.",
+      "caption": "Data handling table for the Laju service",
+      "columns": {
+        "item": "Data",
+        "purpose": "Purpose",
+        "location": "Location",
+        "retention": "Retention"
+      },
+      "rows": {
+        "measurementPayloads": {
+          "item": "Test payload",
+          "purpose": "Measuring download and upload speed",
+          "location": "Transient memory on the test server",
+          "retention": "Discarded immediately, never written to storage"
+        },
+        "observedIp": {
+          "item": "IP address our server sees",
+          "purpose": "Shown back to you in the connection panel",
+          "location": "Computed per request",
+          "retention": "Not recorded by the application code"
+        },
+        "probeIp": {
+          "item": "IP address at the IPv4 and IPv6 lookups",
+          "purpose": "Showing both address families at once",
+          "location": "Third-party services contacted directly by your browser",
+          "retention": "Governed by those providers' own policies"
+        },
+        "localHistory": {
+          "item": "Test history",
+          "purpose": "Comparing results over time",
+          "location": "Your browser's local storage",
+          "retention": "30 most recent results, erasable at any time"
+        },
+        "localePreference": {
+          "item": "Language choice",
+          "purpose": "Remembering the language you picked",
+          "location": "A functional cookie in your browser",
+          "retention": "Until you clear site data"
+        },
+        "platformLogs": {
+          "item": "Infrastructure-level logs",
+          "purpose": "Operations and security at the hosting provider",
+          "location": "The hosting provider running this site",
+          "retention": "Governed by the hosting provider's policy"
+        }
+      }
+    },
+    "probes": {
+      "title": "Third-party endpoints on this deployment",
+      "note": "The addresses above are read from the running deployment's configuration, so this list cannot fall out of step with the code.",
+      "disabled": "Third-party lookups are disabled on this deployment; the connection panel shows only the address our own server sees."
+    },
+    "sections": {
+      "scope": {
+        "title": "Scope",
+        "body": "This document covers the Laju site and its measurement endpoints. It is an explanation, not a certification: we claim no third-party audit or accreditation."
+      },
+      "dataMinimisation": {
+        "title": "Data minimisation",
+        "body": "The service is designed to work without accounts, without mandatory forms, and without storing results on a server. The test payload is random bytes that contain nothing about you and are discarded on arrival."
+      },
+      "ipDisclosure": {
+        "title": "Openness about IP addresses",
+        "body": "A web page cannot ask the operating system for its IP addresses. All it can do is ask a server which address that server saw.\n\nBecause a single server only ever sees one address family, showing IPv4 and IPv6 together requires the browser to contact two different hostnames. We say so explicitly rather than presenting the result as if it came from your device."
+      },
+      "thirdParties": {
+        "title": "Third parties",
+        "body": "This deployment uses the address-lookup endpoints listed above and loads web fonts from Google Fonts. There is no ad network, no cross-site tracker and no other third-party embed on the page."
+      },
+      "measurementHonesty": {
+        "title": "Measurement honesty",
+        "body": "The engine parameters shown on the How It Works page are read directly from the program's configuration, so the documentation cannot drift from actual behaviour.\n\nThe limits of the method are listed on the same page. Activity estimates such as streaming or video calling are labelled as estimates, not guarantees."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "body": "The interface aims to follow common practice: adequate contrast, visible keyboard focus, a skip link, semantic elements and respect for reduced-motion preferences.\n\nWe have not carried out a formal accessibility audit, so we do not claim a specific WCAG conformance level. Reports of accessibility problems are very welcome."
+      },
+      "security": {
+        "title": "Security",
+        "body": "The site is served over HTTPS. Measurement endpoints enforce request size limits and return headers that forbid caching, so a cache in the middle cannot fake a result.\n\nBecause there is no user database, there is no credential store or personal history that could leak from our side."
+      },
+      "openness": {
+        "title": "Openness",
+        "body": "The method, parameters and limits are written openly on this site. If you find a mismatch between what is written and what happens, tell us and we will follow it up and update this page."
+      },
+      "limitations": {
+        "title": "Limits we acknowledge",
+        "body": "We do not operate a global network of test servers, so a result does not always represent the path to other services. We also depend on the hosting provider for infrastructure-level logs that sit outside our code.\n\nWe hold no ISO, SOC or comparable certification, and we display no compliance badge we do not have."
+      },
+      "contact": {
+        "title": "Contacting us",
+        "body": "Questions or reports about this page can be sent through the Contact page."
+      }
+    }
+  },
+  "error": {
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "The link you followed may have changed, or it never existed.",
+    "genericTitle": "Something went wrong",
+    "genericBody": "That is a problem on our side. Please reload the page in a moment.",
+    "back": "Back to the speed test"
+  }
+}

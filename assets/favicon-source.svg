@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Laju">
+  <!--
+    Favicon source of truth. Same speedometer mark as BrandLogo.vue, scaled 16×
+    from the 32-unit grid, on the app's void background.
+    Regenerate rasters with: pnpm favicons
+  -->
+  <defs>
+    <linearGradient id="spectrum" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22e1ff"/>
+      <stop offset="52%" stop-color="#6c5cff"/>
+      <stop offset="100%" stop-color="#ff4fd8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#05070f"/>
+  <path d="M72 368a184 184 0 1 1 368 0" fill="none" stroke="url(#spectrum)" stroke-width="42" stroke-linecap="round"/>
+  <path d="M256 360 361.6 208" fill="none" stroke="#eef2ff" stroke-width="36" stroke-linecap="round"/>
+  <circle cx="256" cy="360" r="37" fill="#eef2ff"/>
+</svg>
