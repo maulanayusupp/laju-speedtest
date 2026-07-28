@@ -1,0 +1,27 @@
+# Nuxt / Nitro
+.nuxt
+.output
+.data
+dist
+
+# Dependencies
+node_modules
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.DS_Store
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

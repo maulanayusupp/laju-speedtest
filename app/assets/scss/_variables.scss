@@ -1,0 +1,37 @@
+// =============================================================================
+// Build-time SCSS variables (no CSS output). Injected into every component via
+// _shared.scss. Runtime/theme values live in _tokens.scss as CSS custom props.
+// =============================================================================
+
+// --- Breakpoints -------------------------------------------------------------
+$breakpoints: (
+  'xs': 30rem,   // 480px
+  'sm': 40rem,   // 640px
+  'md': 48rem,   // 768px
+  'lg': 64rem,   // 1024px
+  'xl': 80rem,   // 1280px
+  'xxl': 96rem,  // 1536px
+);
+
+// --- Layout ------------------------------------------------------------------
+$container-max: 76rem;      // 1216px content width
+$container-wide: 90rem;     // 1440px for full-bleed sections
+$container-narrow: 52rem;   // 832px for legal / long-form reading
+$gutter: clamp(1.15rem, 4vw, 2.75rem);
+
+// --- z-index scale -----------------------------------------------------------
+$z-layers: (
+  'below': -1,
+  'base': 0,
+  'raised': 10,
+  'sticky': 100,
+  'header': 200,
+  'overlay': 300,
+  'modal': 400,
+  'toast': 500,
+);
+
+// --- Fonts -------------------------------------------------------------------
+$font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+$font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', 'Menlo', monospace;

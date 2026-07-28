@@ -1,0 +1,29 @@
+{
+  "name": "laju-speedtest",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "favicons": "node scripts/generate-favicons.mjs",
+    "og": "node scripts/generate-og.mjs",
+    "i18n:check": "node scripts/check-i18n.mjs",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "10.5.0",
+    "@nuxtjs/seo": "5.3.6",
+    "nuxt": "4.5.1"
+  },
+  "devDependencies": {
+    "favicons": "7.3.1",
+    "sass": "1.102.0",
+    "sharp": "0.35.3"
+  }
+}
