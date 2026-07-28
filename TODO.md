@@ -22,6 +22,14 @@ Backlog for the speed test. Anything shipped from here must also update
 
 ## Measurement quality
 
+- [ ] **Reconcile upload bytes against the server.** `XMLHttpRequest.upload`
+      progress counts bytes handed to the socket, so the request that is still
+      in flight when the window closes contributes buffered-but-unsent bytes.
+      `/api/speed/upload` already echoes `{ bytes }` per completed request — use
+      that to bound the counted total instead of trusting progress events alone.
+      This is the main reason our upload figure can read a little high on slow
+      links (documented today as a limit on `/how-it-works`).
+
 - [ ] **Adaptive duration.** Stop early when throughput has been stable for N
       seconds; on very slow links, extend a little instead of reporting a
       warm-up artefact.

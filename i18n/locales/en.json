@@ -54,6 +54,7 @@
     "latency": "Latency",
     "jitter": "Jitter",
     "loadedLatency": "Latency under load",
+    "loopback": "Loopback, not internet",
     "transferHint": "about {value} MB per second",
     "latencyHint": "average {value} ms",
     "lossHint": "{value}% of probes did not arrive"
@@ -115,6 +116,7 @@
     "requirementBoth": "needs roughly {down} Mbps down and {up} Mbps up",
     "supported": "Supported",
     "notSupported": "Not supported yet",
+    "localNotice": "These estimates are hidden because the test ran against a local server. A loopback figure does not represent your internet connection, so inferring streaming or gaming capability from it would mislead. Run the test through a public deployment to see this section.",
     "disclaimer": "These thresholds are common round numbers for a single activity on an otherwise idle network. Real requirements vary by service, and latency, jitter, Wi-Fi quality and the number of devices all matter too."
   },
   "details": {

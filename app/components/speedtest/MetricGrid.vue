@@ -4,11 +4,18 @@
 import type { SpeedTestResult, TestPhase } from '~/types'
 import { gradeDownload, gradeJitter, gradeLatency, gradeUpload } from '~/services/grading.service'
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   result: SpeedTestResult | null
   phase: TestPhase
   liveValue: number
-}>()
+  /**
+   * Served from localhost/LAN: the throughput figures are loopback numbers, so
+   * grading them "excellent" would be a lie. The tiles say what they are instead.
+   */
+  local?: boolean
+}>(), {
+  local: false,
+})
 
 const { t } = useI18n()
 const { speed, latency, transferRate } = useFormat()
@@ -35,7 +42,8 @@ const tiles = computed(() => {
       label: t('metrics.download'),
       value: downloadValue,
       unit: t('units.mbps'),
-      grade: result ? gradeDownload(result.download.mbps) : null,
+      grade: result && !props.local ? gradeDownload(result.download.mbps) : null,
+      note: result && props.local ? t('metrics.loopback') : null,
       hint: result ? t('metrics.transferHint', { value: transferRate(result.download.mbps) }) : null,
       active: props.phase === 'download',
     },
@@ -45,7 +53,8 @@ const tiles = computed(() => {
       label: t('metrics.upload'),
       value: uploadValue,
       unit: t('units.mbps'),
-      grade: result ? gradeUpload(result.upload.mbps) : null,
+      grade: result && !props.local ? gradeUpload(result.upload.mbps) : null,
+      note: result && props.local ? t('metrics.loopback') : null,
       hint: result ? t('metrics.transferHint', { value: transferRate(result.upload.mbps) }) : null,
       active: props.phase === 'upload',
     },
@@ -55,6 +64,8 @@ const tiles = computed(() => {
       label: t('metrics.latency'),
       value: latencyValue,
       unit: t('units.ms'),
+      // Latency stays graded even locally: a loopback round trip is still a real
+      // round trip, just a very short one.
       grade: result ? gradeLatency(result.latency.minMs) : null,
       hint: result ? t('metrics.latencyHint', { value: latency(result.latency.avgMs) }) : null,
       active: props.phase === 'latency',
@@ -87,6 +98,7 @@ const tiles = computed(() => {
       :unit="tile.unit"
       :grade="tile.grade"
       :grade-label="tile.grade ? t(`grades.${tile.grade}`) : null"
+      :note="tile.note ?? null"
       :hint="tile.hint"
       :active="tile.active"
     />

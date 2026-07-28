@@ -86,7 +86,7 @@ server/
   api/speed/{ping,download,upload}   # measurement endpoints
   api/network/ip                     # address our origin observes
   utils/measurement.ts               # no-store headers, region, clamping
-i18n/locales/{en,id}.json            # ALL user-facing text (366 keys each)
+i18n/locales/{en,id}.json            # ALL user-facing text (368 keys each)
 public/                              # generated favicons, manifest, og-image
 scripts/                             # generate-favicons, generate-og, check-i18n
 assets/favicon-source.svg            # favicon source of truth
@@ -130,7 +130,7 @@ names never appear in tags: `<BaseButton>`, `<SpeedGauge>`, `<MetricTile>`.
 | Backpressure | The download route streams through a Node `Readable` so `pipe()` applies backpressure instead of buffering in memory. |
 | Aborts | **Expected, never errors.** Every stream is cancelled when the window closes. `upload.post.ts` drains with explicit `data`/`end`/`aborted`/`error`/`close` listeners (a `for await` loop throws `ECONNRESET` and h3 logs it as an unhandled request error); `download.get.ts` pipes by hand and settles on the response's `close`, so nothing dangles and nothing is logged. |
 | Limits | Both throughput routes cap a single request at 256 MiB. |
-| Local origin | When the page is served from localhost/LAN (`isLocalOrigin()` in the network service), the stage shows a warn-tone notice: the payload never leaves the machine, so the number is loopback throughput, not internet speed. This is the normal dev state and the case most likely to be misread. |
+| Local origin | When the page is served from localhost/LAN (`isLocalOrigin()` in the network service) the payload never leaves the machine, so the throughput figures are loopback numbers. The UI degrades accordingly: a warn notice under the gauge, the download/upload tiles carry a neutral **"loopback, not internet"** badge **instead of a grade**, and the capability estimates are replaced by an explanation. Latency keeps its grade — a loopback round trip is still a real round trip. A telltale of this state is upload measuring *higher* than download, which no real line does. |
 
 **IPv4 + IPv6.** A web page cannot ask the OS for its addresses; it can only ask
 a server which address it saw, and one server only ever sees one family. So the
@@ -181,7 +181,7 @@ the compliance page prints the live endpoint list from runtime config.
 - Locales in `i18n/locales/{en,id}.json`; **ID is the default** (no prefix),
   EN lives under `/en/*` (`strategy: 'prefix_except_default'`).
 - Keys mirror page/section structure. **Keep EN and ID in lockstep** — same keys
-  and same interpolation placeholders (**366 keys each**). `pnpm i18n:check`
+  and same interpolation placeholders (**368 keys each**). `pnpm i18n:check`
   verifies both and exits non-zero on drift.
 - Interpolations in use: `{date}`, `{value}`, `{unit}`, `{down}`, `{up}`,
   `{name}`, `{reply}`, `{topic}`, `{message}`. A literal `@` must be escaped as

@@ -54,6 +54,7 @@
     "latency": "Latensi",
     "jitter": "Jitter",
     "loadedLatency": "Latensi saat sibuk",
+    "loopback": "Loopback, bukan internet",
     "transferHint": "sekitar {value} MB per detik",
     "latencyHint": "rata-rata {value} ms",
     "lossHint": "{value}% permintaan tidak sampai"
@@ -115,6 +116,7 @@
     "requirementBoth": "perlu sekitar {down} Mbps unduh dan {up} Mbps unggah",
     "supported": "Terpenuhi",
     "notSupported": "Belum terpenuhi",
+    "localNotice": "Perkiraan ini disembunyikan karena tes dijalankan dari server lokal. Angka loopback tidak mewakili kecepatan internet Anda, jadi menyimpulkan kemampuan streaming atau permainan dari angka itu akan menyesatkan. Jalankan tes lewat penerapan publik untuk melihat bagian ini.",
     "disclaimer": "Angka ambang di atas adalah perkiraan umum untuk satu aktivitas pada jaringan yang sedang tidak sibuk. Kebutuhan sebenarnya berbeda tiap layanan, dan latensi, jitter, kualitas Wi-Fi, serta jumlah perangkat ikut menentukan."
   },
   "details": {

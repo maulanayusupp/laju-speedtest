@@ -12,11 +12,14 @@ withDefaults(defineProps<{
   unit: string
   grade?: Grade | null
   gradeLabel?: string | null
+  /** Neutral badge shown instead of a grade when grading would be misleading. */
+  note?: string | null
   hint?: string | null
   active?: boolean
 }>(), {
   grade: null,
   gradeLabel: null,
+  note: null,
   hint: null,
   active: false,
 })
@@ -33,7 +36,8 @@ withDefaults(defineProps<{
       <span class="tile__unit">{{ unit }}</span>
     </p>
     <div class="tile__foot">
-      <BaseBadge v-if="grade && gradeLabel" :tone="grade" dot>{{ gradeLabel }}</BaseBadge>
+      <BaseBadge v-if="note" tone="neutral" dot>{{ note }}</BaseBadge>
+      <BaseBadge v-else-if="grade && gradeLabel" :tone="grade" dot>{{ gradeLabel }}</BaseBadge>
       <span v-if="hint" class="tile__hint">{{ hint }}</span>
     </div>
   </div>

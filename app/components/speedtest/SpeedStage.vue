@@ -133,7 +133,12 @@ function onStart() {
       </aside>
 
       <div class="stage__metrics">
-        <MetricGrid :result="result" :phase="phase" :live-value="liveValue" />
+        <MetricGrid
+          :result="result"
+          :phase="phase"
+          :live-value="liveValue"
+          :local="isLocalMeasurement"
+        />
       </div>
 
       <div v-if="showTrace" class="stage__trace">
@@ -147,10 +152,13 @@ function onStart() {
         <div class="stage__capabilities">
           <BaseCard padding="md">
             <p class="stage__capabilities-title">{{ t('capabilities.title') }}</p>
+            <!-- Estimating what a loopback figure "supports" would be nonsense. -->
             <CapabilityList
+              v-if="!isLocalMeasurement"
               :download-mbps="result.download.mbps"
               :upload-mbps="result.upload.mbps"
             />
+            <InfoNote v-else tone="warn" icon="alert">{{ t('capabilities.localNotice') }}</InfoNote>
           </BaseCard>
         </div>
       </template>
