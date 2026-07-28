@@ -66,6 +66,7 @@
     "error": "Tes tidak dapat diselesaikan. Periksa koneksi Anda lalu coba lagi.",
     "progressLabel": "Kemajuan pengujian",
     "noTrace": "Grafik akan muncul setelah pengukuran dimulai.",
+    "localOrigin": "Situs ini sedang dibuka dari server lokal, sehingga data uji tidak keluar dari perangkat atau jaringan Anda. Angka yang muncul mengukur loopback atau jaringan lokal, bukan kecepatan internet Anda, dan wajar jika jauh lebih besar daripada hasil alat tes lain.",
     "peak": "puncak",
     "phases": {
       "idle": "Siap diuji",
@@ -243,7 +244,7 @@
     "items": {
       "whyDifferent": {
         "q": "Kenapa hasilnya berbeda dengan alat tes lain?",
-        "a": "Setiap alat memakai server, durasi, jumlah koneksi paralel, dan cara menghitung rata-rata yang berbeda. Perbedaan puluhan persen antar alat adalah hal biasa. Yang lebih berguna adalah membandingkan hasil dari alat yang sama di waktu yang berbeda."
+        "a": "Setiap alat memakai server, durasi, jumlah koneksi paralel, dan cara menghitung rata-rata yang berbeda. Perbedaan puluhan persen antar alat adalah hal biasa. Selisih yang sangat besar biasanya berarti jalurnya memang berbeda — misalnya alat lain menguji ke server terdekat milik operator Anda, sedangkan Laju menguji ke servernya sendiri. Bila Laju dijalankan dari server lokal, data uji bahkan tidak keluar dari perangkat Anda dan angkanya bukan kecepatan internet sama sekali. Yang paling berguna adalah membandingkan hasil dari alat yang sama di waktu yang berbeda."
       },
       "ipv6Missing": {
         "q": "Kenapa alamat IPv6 saya tidak terdeteksi?",

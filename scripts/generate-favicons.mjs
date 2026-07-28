@@ -45,8 +45,11 @@ async function run() {
   )
 
   // Write only the manifest; the <link> tags are declared in nuxt.config.
-  const manifest = response.files.find((file) => file.name.endsWith('.json'))
-  if (manifest) await writeFile(resolve(OUT, 'site.webmanifest'), manifest.contents)
+  // `favicons` names it manifest.webmanifest — match both spellings so a
+  // future rename cannot silently skip the file (it did once).
+  const manifest = response.files.find((file) => /\.(webmanifest|json)$/.test(file.name))
+  if (!manifest) throw new Error('favicons produced no web app manifest')
+  await writeFile(resolve(OUT, 'site.webmanifest'), manifest.contents)
 
   await copyFile(SOURCE, resolve(OUT, 'favicon.svg'))
 

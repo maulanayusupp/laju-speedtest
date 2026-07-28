@@ -3,6 +3,7 @@
 // its own — `useSpeedTest` runs the test, `useNetworkIdentity` resolves the
 // addresses, and this component arranges them.
 import { getMeasurementParameters } from '~/services/content.service'
+import { isLocalOrigin } from '~/services/network.service'
 
 defineProps<{
   title: string
@@ -66,6 +67,16 @@ const headlineCaption = computed(() =>
   phase.value === 'done' ? t('metrics.download') : undefined,
 )
 
+/**
+ * Served from this machine or the LAN? Then the run never leaves the network
+ * and the figure is not an internet speed. Say so before the number is read,
+ * not in a footnote afterwards.
+ */
+const isLocalMeasurement = ref(false)
+onMounted(() => {
+  isLocalMeasurement.value = isLocalOrigin(window.location.hostname)
+})
+
 function onStart() {
   void start({ serverRegion: identity.value.serverRegion })
 }
@@ -111,6 +122,10 @@ function onStart() {
         </p>
 
         <p class="sr-only" aria-live="polite">{{ t(`stage.phases.${phase}`) }}</p>
+
+        <InfoNote v-if="isLocalMeasurement" class="stage__local-note" tone="warn" icon="alert">
+          {{ t('stage.localOrigin') }}
+        </InfoNote>
       </div>
 
       <aside class="stage__aside">
@@ -196,6 +211,10 @@ function onStart() {
   justify-items: center;
   gap: 0.75rem;
   min-height: 3rem;
+}
+
+.stage__local-note {
+  max-width: 34rem;
 }
 
 .stage__error {

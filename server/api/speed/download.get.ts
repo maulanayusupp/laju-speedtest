@@ -54,5 +54,27 @@ export default defineEventHandler((event) => {
     'content-disposition': 'attachment; filename="laju-payload.bin"',
   })
 
-  return sendStream(event, Readable.from(payload(bytes)))
+  // The client cancels the response the moment its measurement window closes,
+  // which is expected — not an error. Piping by hand (instead of `sendStream`)
+  // lets us tear the generator down on 'close' and still settle the handler, so
+  // an aborted download leaves neither a dangling promise nor a logged failure.
+  const stream = Readable.from(payload(bytes))
+  event._handled = true
+
+  return new Promise<void>((resolve) => {
+    const response = event.node.res
+    let settled = false
+    const finish = () => {
+      if (settled) return
+      settled = true
+      stream.destroy()
+      resolve()
+    }
+
+    response.on('close', finish)
+    response.on('error', finish)
+    stream.on('end', finish)
+    stream.on('error', finish)
+    stream.pipe(response)
+  })
 })

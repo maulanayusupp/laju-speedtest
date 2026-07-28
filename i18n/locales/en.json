@@ -66,6 +66,7 @@
     "error": "The test could not finish. Check your connection and try again.",
     "progressLabel": "Test progress",
     "noTrace": "The chart appears once measurement starts.",
+    "localOrigin": "This site is being served from a local server, so the test payload never leaves your device or network. The figures measure loopback or your LAN, not your internet connection, and are expected to be far higher than other speed tests.",
     "peak": "peak",
     "phases": {
       "idle": "Ready to test",
@@ -243,7 +244,7 @@
     "items": {
       "whyDifferent": {
         "q": "Why does this differ from other speed tests?",
-        "a": "Every tool uses different servers, durations, connection counts and averaging rules. Differences of tens of percent between tools are normal. Comparing results from the same tool over time is far more useful."
+        "a": "Every tool uses different servers, durations, connection counts and averaging rules. Differences of tens of percent between tools are normal. A very large gap usually means the path itself is different — the other tool may test against your operator's nearest server while Laju tests against its own. And when Laju is served from a local server, the payload never leaves your machine at all, so the number is not an internet speed. Comparing results from the same tool over time is far more useful."
       },
       "ipv6Missing": {
         "q": "Why is my IPv6 address not detected?",

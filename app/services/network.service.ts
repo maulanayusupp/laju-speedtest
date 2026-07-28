@@ -32,6 +32,25 @@ function emptyAddress(family: 4 | 6, status: IpAddressInfo['status']): IpAddress
   return { family, address: null, source: 'probe', status }
 }
 
+/**
+ * True when the page is served from this machine or the local network. Then the
+ * measurement never touches the internet — it measures loopback or LAN — and
+ * the numbers must not be presented as an internet speed. This is the normal
+ * state during development, which is exactly when a four-digit result is most
+ * likely to be misread.
+ */
+export function isLocalOrigin(hostname: string): boolean {
+  const host = hostname.toLowerCase().replace(/^\[|\]$/g, '')
+  if (host === 'localhost' || host.endsWith('.localhost')) return true
+  if (host.endsWith('.local') || host.endsWith('.internal')) return true
+  if (host === '::1' || host === '0.0.0.0') return true
+  if (host.startsWith('127.') || host.startsWith('169.254.')) return true
+  if (host.startsWith('10.') || host.startsWith('192.168.')) return true
+  if (/^172\.(1[6-9]|2\d|3[01])\./.test(host)) return true
+  if (/^fe[89ab]/.test(host) || /^f[cd]/.test(host)) return true
+  return false
+}
+
 /** Accepts either a bare address (text/plain) or `{"ip":"..."}` (JSON). */
 function extractAddress(body: string): string {
   const trimmed = body.trim()
